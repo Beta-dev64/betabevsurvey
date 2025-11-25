@@ -1,0 +1,671 @@
+2025-11-03 09:28:25,235 INFO: Dangote Execution Tracker startup [in C:\Users\DELL\Documents\devs\betadev\app.py:24]
+2025-11-03 09:28:27,072 INFO: Dangote Execution Tracker startup [in C:\Users\DELL\Documents\devs\betadev\app.py:24]
+2025-11-03 09:31:07,877 INFO: Starting outlet import session 1e82fcb7 for file: times.csv [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:568]
+2025-11-03 09:31:07,877 INFO: Import 1e82fcb7: CSV file read successfully [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:588]
+2025-11-03 09:31:07,878 INFO: Import 1e82fcb7: Column validation passed. Columns found: region, urn, outlet_name, customer_name, address, phone, outlet_type, local_govt, state, RO/PSS, STATUS [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:600]
+2025-11-03 09:31:07,878 INFO: Import 1e82fcb7: 1 data rows found [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:605]
+2025-11-03 09:31:07,902 INFO: Import 1e82fcb7: Row 2 - Updated existing outlet URN: DCP/19/SS/004753 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:31:07,903 INFO: Import 1e82fcb7 completed: 1 rows processed, 0 new outlets created, 1 existing outlets updated, 0 errors encountered [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:719]
+2025-11-03 09:31:25,574 INFO: Starting outlet import session 60f6b299 for file: akib.csv [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:568]
+2025-11-03 09:31:25,576 ERROR: Import 60f6b299: File encoding error: 'utf-8' codec can't decode byte 0xdf in position 18167: invalid continuation byte. Please ensure the CSV file is UTF-8 encoded. [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:754]
+2025-11-03 09:31:45,250 INFO: Starting outlet import session 441044c4 for file: test2.csv [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:568]
+2025-11-03 09:31:45,251 INFO: Import 441044c4: CSV file read successfully [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:588]
+2025-11-03 09:31:45,253 INFO: Import 441044c4: Column validation passed. Columns found: region, urn, outlet_name, customer_name, address, phone, outlet_type, local_govt, state, RO/PSS, STATUS [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:600]
+2025-11-03 09:31:45,254 INFO: Import 441044c4: 12 data rows found [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:605]
+2025-11-03 09:31:45,258 INFO: Import 441044c4: Row 2 - Updated existing outlet URN: DCP/19/SS/004753 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:31:45,259 INFO: Import 441044c4: Row 3 - Updated existing outlet URN: DCP/19/SS/004754 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:31:45,262 INFO: Import 441044c4: Row 4 - Updated existing outlet URN: DCP/19/SS/004755 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:31:45,262 INFO: Import 441044c4: Row 5 - Updated existing outlet URN: DCP/19/SS/004910 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:31:45,263 INFO: Import 441044c4: Row 6 - Updated existing outlet URN: DCP/19/SS/004912 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:31:45,264 INFO: Import 441044c4: Row 7 - Updated existing outlet URN: DCP/19/SS/004913 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:31:45,265 INFO: Import 441044c4: Row 8 - Updated existing outlet URN: DCP/19/SS/004914 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:31:45,265 INFO: Import 441044c4: Row 9 - Updated existing outlet URN: DCP/19/SS/004915 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:31:45,266 INFO: Import 441044c4: Row 10 - Updated existing outlet URN: DCP/19/SS/004916 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:31:45,266 INFO: Import 441044c4: Row 11 - Updated existing outlet URN: DCP/19/SS/004917 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:31:45,267 INFO: Import 441044c4: Row 12 - Updated existing outlet URN: DCP/19/SS/004918 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:31:45,267 INFO: Import 441044c4: Row 13 - Updated existing outlet URN: DCP/19/SS/004919 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:31:45,403 INFO: Import 441044c4 completed: 12 rows processed, 0 new outlets created, 12 existing outlets updated, 0 errors encountered [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:719]
+2025-11-03 09:40:24,316 INFO: Starting outlet import session 30d75f88 for file: times.csv [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:568]
+2025-11-03 09:40:24,324 INFO: Import 30d75f88: CSV file read successfully [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:588]
+2025-11-03 09:40:24,325 INFO: Import 30d75f88: Column validation passed. Columns found: region, urn, outlet_name, customer_name, address, phone, outlet_type, local_govt, state, RO/PSS, STATUS [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:600]
+2025-11-03 09:40:24,326 INFO: Import 30d75f88: 25 data rows found [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:605]
+2025-11-03 09:40:24,329 INFO: Import 30d75f88: Row 2 - Updated existing outlet URN: DCP/24/SS/14001 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:40:24,330 INFO: Import 30d75f88: Row 3 - Updated existing outlet URN: DCP/24/SS/14002 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:40:24,330 INFO: Import 30d75f88: Row 4 - Updated existing outlet URN: DCP/24/SS/14450 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:40:24,331 INFO: Import 30d75f88: Row 5 - Updated existing outlet URN: DCP/24/SS/14487 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:40:24,331 INFO: Import 30d75f88: Row 6 - Updated existing outlet URN: DCP/24/SS/14529 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:40:24,332 INFO: Import 30d75f88: Row 7 - Updated existing outlet URN: DCP/24/SS/14530 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:40:24,332 INFO: Import 30d75f88: Row 8 - Updated existing outlet URN: DCP/25/SS/15038 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:40:24,333 INFO: Import 30d75f88: Row 9 - Updated existing outlet URN: DCP/25/SS/15104 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:40:24,333 INFO: Import 30d75f88: Row 10 - Updated existing outlet URN: DCP/25/SS/15199 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:40:24,334 INFO: Import 30d75f88: Row 11 - Updated existing outlet URN: DCP/25/SS/15351 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:40:24,334 INFO: Import 30d75f88: Row 12 - Updated existing outlet URN: DCP/24/SS/14452 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:40:24,336 INFO: Import 30d75f88: Row 13 - Updated existing outlet URN: DCP/24/SS/14639 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:40:24,336 INFO: Import 30d75f88: Row 14 - Updated existing outlet URN: DCP/25/SS/15375 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:40:24,337 INFO: Import 30d75f88: Row 15 - Updated existing outlet URN: DCP/19/SS/005380 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:40:24,337 INFO: Import 30d75f88: Row 16 - Updated existing outlet URN: DCP/19/SS/005069 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:40:24,338 INFO: Import 30d75f88: Row 17 - Updated existing outlet URN: DCP/19/SS/005070 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:40:24,338 INFO: Import 30d75f88: Row 18 - Updated existing outlet URN: DCP/19/SS/005071 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:40:24,339 INFO: Import 30d75f88: Row 19 - Updated existing outlet URN: DCP/19/SS/005096 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:40:24,339 INFO: Import 30d75f88: Row 20 - Updated existing outlet URN: DCP/19/SS/005097 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:40:24,340 INFO: Import 30d75f88: Row 21 - Updated existing outlet URN: DCP/19/SS/005102 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:40:24,341 INFO: Import 30d75f88: Row 22 - Inserted new outlet URN: DCP/19/SS/005412, Name: Godwin Udokpo [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:700]
+2025-11-03 09:40:24,341 INFO: Import 30d75f88: Row 23 - Updated existing outlet URN: DCP/19/SS/005413 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:40:24,342 INFO: Import 30d75f88: Row 24 - Updated existing outlet URN: DCP/19/SS/005414 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:683]
+2025-11-03 09:40:24,342 INFO: Import 30d75f88: Row 25 - Inserted new outlet URN: DCP/19/SS/005416, Name: Morrison [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:700]
+2025-11-03 09:40:24,343 INFO: Import 30d75f88: Row 26 - Inserted new outlet URN: DCP/19/SS/005519, Name: SUNDAY JAMES AKPAN [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:700]
+2025-11-03 09:40:24,489 INFO: Import 30d75f88 completed: 25 rows processed, 3 new outlets created, 22 existing outlets updated, 0 errors encountered [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:719]
+2025-11-03 09:57:05,282 INFO: Dangote Execution Tracker startup [in C:\Users\DELL\Documents\devs\betadev\app.py:24]
+2025-11-03 09:57:06,818 INFO: Dangote Execution Tracker startup [in C:\Users\DELL\Documents\devs\betadev\app.py:24]
+2025-11-03 09:58:55,743 INFO: Starting outlet import session cd971e4a for file: akib.csv [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:568]
+2025-11-03 09:58:55,745 ERROR: Import cd971e4a: File encoding error: 'utf-8' codec can't decode byte 0xdf in position 18167: invalid continuation byte. Please ensure the CSV file is UTF-8 encoded. [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:772]
+2025-11-03 10:03:42,654 INFO: Starting outlet import session c1eab769 for file: times.csv [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:568]
+2025-11-03 10:03:42,655 INFO: Import c1eab769: CSV file read successfully [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:588]
+2025-11-03 10:03:42,658 INFO: Import c1eab769: Column validation passed. Columns found: region, urn, outlet_name, customer_name, address, phone, outlet_type, local_govt, state, RO/PSS, STATUS [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:600]
+2025-11-03 10:03:42,663 INFO: Import c1eab769: 25 data rows found [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:605]
+2025-11-03 10:03:42,666 INFO: Import c1eab769: Row 2 sample data: {'region': 'SS', 'urn': 'DCP/20/SS/007742', 'outlet_name': 'Christian James', 'customer_name': 'Christian James ', 'address': 'Iko Town, Eastern Obolo', 'phone': '8103125748', 'outlet_type': 'Shop', 'local_govt': 'Eastern Obolo', 'state': 'Akwa Ibom', 'RO/PSS': 'Dickson Nammonso ', 'STATUS': 'Active'} [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:630]
+2025-11-03 10:03:42,670 INFO: Import c1eab769: Row 2 - Inserting data: URN=DCP/20/SS/007742, Name=Christian James, Customer=Christian James, Address=Iko Town, Eastern Obolo... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,673 INFO: Import c1eab769: Row 2 - Successfully inserted outlet URN: DCP/20/SS/007742, Name: Christian James [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,674 INFO: Import c1eab769: Row 3 sample data: {'region': 'SS', 'urn': 'DCP/20/SS/007743', 'outlet_name': 'Charlitex Ventures', 'customer_name': 'Charley Rowland', 'address': 'Okoroete headbridge, Eastern Obolo', 'phone': '8088714127', 'outlet_type': 'Shop', 'local_govt': 'Eastern Obolo', 'state': 'Akwa Ibom', 'RO/PSS': 'Dickson Nammonso ', 'STATUS': 'Active'} [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:630]
+2025-11-03 10:03:42,675 INFO: Import c1eab769: Row 3 - Inserting data: URN=DCP/20/SS/007743, Name=Charlitex Ventures, Customer=Charley Rowland, Address=Okoroete headbridge, Eastern Obolo... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,682 INFO: Import c1eab769: Row 3 - Successfully inserted outlet URN: DCP/20/SS/007743, Name: Charlitex Ventures [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,683 INFO: Import c1eab769: Row 4 sample data: {'region': 'SS', 'urn': 'DCP/19/SS/005421', 'outlet_name': 'Emem Godwin Akpabio', 'customer_name': 'Emmya Big Enterprise', 'address': '2 Mission road, ukan', 'phone': '8065144094', 'outlet_type': 'Shop', 'local_govt': 'Edemaya', 'state': 'Akwa Ibom', 'RO/PSS': 'Dickson Nammonso ', 'STATUS': 'Active'} [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:630]
+2025-11-03 10:03:42,685 INFO: Import c1eab769: Row 4 - Inserting data: URN=DCP/19/SS/005421, Name=Emem Godwin Akpabio, Customer=Emmya Big Enterprise, Address=2 Mission road, ukan... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,686 INFO: Import c1eab769: Row 4 - Successfully inserted outlet URN: DCP/19/SS/005421, Name: Emem Godwin Akpabio [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,687 INFO: Import c1eab769: Row 5 - Inserting data: URN=DCP/19/SS/005422, Name=Anietie Udo Akpan, Customer=Anitex & sons Enterprise, Address=Ikot Ussoide junction... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,689 INFO: Import c1eab769: Row 5 - Successfully inserted outlet URN: DCP/19/SS/005422, Name: Anietie Udo Akpan [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,690 INFO: Import c1eab769: Row 6 - Inserting data: URN=DCP/19/SS/005423, Name=Idogesit Peter, Customer=Idongesit, Address=Ikot ubo market... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,691 INFO: Import c1eab769: Row 6 - Successfully inserted outlet URN: DCP/19/SS/005423, Name: Idogesit Peter [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,697 INFO: Import c1eab769: Row 7 - Inserting data: URN=DCP/19/SS/005424, Name=Nsikan Sunday Ndah, Customer=Nothing pass God Ventures, Address=Ikot Usop bus stop... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,698 INFO: Import c1eab769: Row 7 - Successfully inserted outlet URN: DCP/19/SS/005424, Name: Nsikan Sunday Ndah [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,700 INFO: Import c1eab769: Row 8 - Inserting data: URN=DCP/19/SS/005001, Name=Rose Cement Shop, Customer=Mrs Rose Udoemana, Address=No 1 Ene Ekpenen Street... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,701 INFO: Import c1eab769: Row 8 - Successfully inserted outlet URN: DCP/19/SS/005001, Name: Rose Cement Shop [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,702 INFO: Import c1eab769: Row 9 - Inserting data: URN=DCP/19/SS/005002, Name=Sir Franksebuka Merchant, Customer=Mr Duru Chukwu Ebuka, Address=No 36 Ene Ekpene Street... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,703 INFO: Import c1eab769: Row 9 - Successfully inserted outlet URN: DCP/19/SS/005002, Name: Sir Franksebuka Merchant [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,704 INFO: Import c1eab769: Row 10 - Inserting data: URN=DCP/19/SS/005004, Name=Mrs Abigel Cement shop, Customer=Mr Abigeil M. Etuk, Address=173 Eket Oron Rd... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,705 INFO: Import c1eab769: Row 10 - Successfully inserted outlet URN: DCP/19/SS/005004, Name: Mrs Abigel Cement shop [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,706 INFO: Import c1eab769: Row 11 - Inserting data: URN=DCP/19/SS/005005, Name=Nokia Steel Company, Customer=Mr Solomon Udegebe, Address=179 Eket Orob Rd... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,707 INFO: Import c1eab769: Row 11 - Successfully inserted outlet URN: DCP/19/SS/005005, Name: Nokia Steel Company [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,713 INFO: Import c1eab769: Row 12 - Inserting data: URN=DCP/19/SS/005007, Name=UZO & SONS Enterprise, Customer=Mr Ernest Dfo, Address=No.1 Afaha Atai street... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,714 INFO: Import c1eab769: Row 12 - Successfully inserted outlet URN: DCP/19/SS/005007, Name: UZO & SONS Enterprise [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,716 INFO: Import c1eab769: Row 13 - Inserting data: URN=DCP/19/SS/005008, Name=P. A  Achalu Venture, Customer=Mr Odinka Achalu, Address=opp Esset fuel station James town... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,719 INFO: Import c1eab769: Row 13 - Successfully inserted outlet URN: DCP/19/SS/005008, Name: P. A  Achalu Venture [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,720 INFO: Import c1eab769: Row 14 - Inserting data: URN=DCP/19/SS/005010, Name=Builder's Warehouse, Customer=Mr Amos Okeke, Address=James town Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,721 INFO: Import c1eab769: Row 14 - Successfully inserted outlet URN: DCP/19/SS/005010, Name: Builder's Warehouse [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,722 INFO: Import c1eab769: Row 15 - Inserting data: URN=DCP/19/SS/005011, Name=Anefiok Cement Shop, Customer=Mr Aniefiok Pius?, Address=lkot Udomah Rd by James Town... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,723 INFO: Import c1eab769: Row 15 - Successfully inserted outlet URN: DCP/19/SS/005011, Name: Anefiok Cement Shop [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,728 INFO: Import c1eab769: Row 16 - Inserting data: URN=DCP/19/SS/005012, Name=Ekong Global, Customer=Mr Ekong, Address=James town Junction... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,729 INFO: Import c1eab769: Row 16 - Successfully inserted outlet URN: DCP/19/SS/005012, Name: Ekong Global [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,730 INFO: Import c1eab769: Row 17 - Inserting data: URN=DCP/19/SS/005013, Name=Sam Harry Enterprise, Customer=Mr Sam Harry, Address=KM6 Eket Oron Rd... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,732 INFO: Import c1eab769: Row 17 - Successfully inserted outlet URN: DCP/19/SS/005013, Name: Sam Harry Enterprise [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,735 INFO: Import c1eab769: Row 18 - Inserting data: URN=DCP/19/SS/005014, Name=Mrs Matthew Cement Shop, Customer=Mrs Emem Matthew, Address=opp Osu Amanam Estate... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,736 INFO: Import c1eab769: Row 18 - Successfully inserted outlet URN: DCP/19/SS/005014, Name: Mrs Matthew Cement Shop [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,737 INFO: Import c1eab769: Row 19 - Inserting data: URN=DCP/19/SS/005016, Name=Kpaksbudy, Customer=Mr Enobong Ukpana, Address=1 Iquat Street ikot ibiok... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,738 INFO: Import c1eab769: Row 19 - Successfully inserted outlet URN: DCP/19/SS/005016, Name: Kpaksbudy [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,743 INFO: Import c1eab769: Row 20 - Inserting data: URN=DCP/19/SS/005027, Name=Triple J Creatives LTD, Customer=Mr Jeff Jideobi James, Address=38 Eket Oron Rd... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,744 INFO: Import c1eab769: Row 20 - Successfully inserted outlet URN: DCP/19/SS/005027, Name: Triple J Creatives LTD [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,745 INFO: Import c1eab769: Row 21 - Inserting data: URN=DCP/19/SS/005028, Name=Mr Jimmy, Customer=Mr Jimmy, Address=No122 Eket Oron Rd... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,746 INFO: Import c1eab769: Row 21 - Successfully inserted outlet URN: DCP/19/SS/005028, Name: Mr Jimmy [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,747 INFO: Import c1eab769: Row 22 - Inserting data: URN=DCP/19/SS/005029, Name=Ifez Steel Ventures, Customer=Mr Ifanyi Patrick, Address=No 123 Eket Oron Rf... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,750 INFO: Import c1eab769: Row 22 - Successfully inserted outlet URN: DCP/19/SS/005029, Name: Ifez Steel Ventures [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,751 INFO: Import c1eab769: Row 23 - Inserting data: URN=DCP/19/SS/005031, Name=Mrs Abigel, Customer=Mrs Abigel, Address=No 177 Eket Oron Rd... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,752 INFO: Import c1eab769: Row 23 - Successfully inserted outlet URN: DCP/19/SS/005031, Name: Mrs Abigel [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,753 INFO: Import c1eab769: Row 24 - Inserting data: URN=DCP/19/SS/005032, Name=Nokia Steel Company, Customer=Mr Solomon Udegebe, Address=No 179 Eket Oron Rd... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,754 INFO: Import c1eab769: Row 24 - Successfully inserted outlet URN: DCP/19/SS/005032, Name: Nokia Steel Company [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,760 INFO: Import c1eab769: Row 25 - Inserting data: URN=DCP/19/SS/005038, Name=Unah Global, Customer=Mrs Patience Onauili, Address=No1 Mkt Rd Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,761 INFO: Import c1eab769: Row 25 - Successfully inserted outlet URN: DCP/19/SS/005038, Name: Unah Global [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,762 INFO: Import c1eab769: Row 26 - Inserting data: URN=DCP/19/SS/005039, Name=Haustrem Support Service, Customer=Mr ThankGod Ogibe, Address=No 4 Mkt Rd Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:03:42,763 INFO: Import c1eab769: Row 26 - Successfully inserted outlet URN: DCP/19/SS/005039, Name: Haustrem Support Service [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:03:42,909 INFO: Import c1eab769 completed: 25 rows processed, 25 new outlets created, 0 existing outlets updated, 0 errors encountered [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:737]
+2025-11-03 10:05:43,330 INFO: Starting outlet import session 8d92ddfe for file: times.csv [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:568]
+2025-11-03 10:05:43,331 INFO: Import 8d92ddfe: CSV file read successfully [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:588]
+2025-11-03 10:05:43,333 INFO: Import 8d92ddfe: Column validation passed. Columns found: region, urn, outlet_name, customer_name, address, phone, outlet_type, local_govt, state, RO/PSS, STATUS [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:600]
+2025-11-03 10:05:43,337 INFO: Import 8d92ddfe: 150 data rows found [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:605]
+2025-11-03 10:05:43,339 INFO: Import 8d92ddfe: Row 2 sample data: {'region': 'SS', 'urn': 'DCP/19/SS/005040', 'outlet_name': 'Veekings Venture', 'customer_name': 'Mrs Emem Ekanem', 'address': 'No 10 Mkt Rd Eket', 'phone': '8029661498', 'outlet_type': 'Shop', 'local_govt': 'Eket', 'state': 'Akwa Ibom', 'RO/PSS': 'Patience Jacob', 'STATUS': 'Active'} [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:630]
+2025-11-03 10:05:43,340 INFO: Import 8d92ddfe: Row 2 - Inserting data: URN=DCP/19/SS/005040, Name=Veekings Venture, Customer=Mrs Emem Ekanem, Address=No 10 Mkt Rd Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,343 INFO: Import 8d92ddfe: Row 2 - Successfully inserted outlet URN: DCP/19/SS/005040, Name: Veekings Venture [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,344 INFO: Import 8d92ddfe: Row 3 sample data: {'region': 'SS', 'urn': 'DCP/19/SS/005041', 'outlet_name': 'Janny Venture', 'customer_name': 'Mr Janet Elijah', 'address': 'No 10 Mkt Rd Eket', 'phone': '8124486564', 'outlet_type': 'Shop', 'local_govt': 'Eket', 'state': 'Akwa Ibom', 'RO/PSS': 'Patience Jacob', 'STATUS': 'Active'} [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:630]
+2025-11-03 10:05:43,345 INFO: Import 8d92ddfe: Row 3 - Inserting data: URN=DCP/19/SS/005041, Name=Janny Venture, Customer=Mr Janet Elijah, Address=No 10 Mkt Rd Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,346 INFO: Import 8d92ddfe: Row 3 - Successfully inserted outlet URN: DCP/19/SS/005041, Name: Janny Venture [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,347 INFO: Import 8d92ddfe: Row 4 sample data: {'region': 'SS', 'urn': 'DCP/19/SS/005042', 'outlet_name': 'Chakenobies Nig LTD', 'customer_name': 'Mr Chike Obiajuju', 'address': 'No 1 Park Lane by Park Rd', 'phone': '7031911995', 'outlet_type': 'Shop', 'local_govt': 'Eket', 'state': 'Akwa Ibom', 'RO/PSS': 'Patience Jacob', 'STATUS': 'Active'} [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:630]
+2025-11-03 10:05:43,348 INFO: Import 8d92ddfe: Row 4 - Inserting data: URN=DCP/19/SS/005042, Name=Chakenobies Nig LTD, Customer=Mr Chike Obiajuju, Address=No 1 Park Lane by Park Rd... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,349 INFO: Import 8d92ddfe: Row 4 - Successfully inserted outlet URN: DCP/19/SS/005042, Name: Chakenobies Nig LTD [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,350 INFO: Import 8d92ddfe: Row 5 - Inserting data: URN=DCP/19/SS/005044, Name=Akanam Commercial Ent, Customer=Mr Akanam Thomas, Address=No 3 park Rd... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,351 INFO: Import 8d92ddfe: Row 5 - Successfully inserted outlet URN: DCP/19/SS/005044, Name: Akanam Commercial Ent [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,353 INFO: Import 8d92ddfe: Row 6 - Inserting data: URN=DCP/19/SS/005046, Name=Uzo & Sons Enterprise, Customer=Mr Ernest Dfo, Address=No1 Afaha Atia Street... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,354 INFO: Import 8d92ddfe: Row 6 - Successfully inserted outlet URN: DCP/19/SS/005046, Name: Uzo & Sons Enterprise [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,360 INFO: Import 8d92ddfe: Row 7 - Inserting data: URN=DCP/19/SS/005154, Name=KOKO'S BUILDING MATERIAL, Customer=KOKO'S BUILDING MATERIAL, Address=9 IKO IKWA ROAD... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,363 INFO: Import 8d92ddfe: Row 7 - Successfully inserted outlet URN: DCP/19/SS/005154, Name: KOKO'S BUILDING MATERIAL [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,364 INFO: Import 8d92ddfe: Row 8 - Inserting data: URN=DCP/19/SS/005272, Name=Mr Jeff Jideobi James, Customer=Creative Nig LTD, Address=32 Eket-Oron... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,365 INFO: Import 8d92ddfe: Row 8 - Successfully inserted outlet URN: DCP/19/SS/005272, Name: Mr Jeff Jideobi James [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,366 INFO: Import 8d92ddfe: Row 9 - Inserting data: URN=DCP/19/SS/005273, Name=Mr Jimmy Ette, Customer=Jim- E Building Merchant, Address=22 Etebi Street... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,367 INFO: Import 8d92ddfe: Row 9 - Successfully inserted outlet URN: DCP/19/SS/005273, Name: Mr Jimmy Ette [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,368 INFO: Import 8d92ddfe: Row 10 - Inserting data: URN=DCP/19/SS/005275, Name=Mrs Emem Richard, Customer=Mrs Emem cement shop, Address=opp Osu- Amanam Estate... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,369 INFO: Import 8d92ddfe: Row 10 - Successfully inserted outlet URN: DCP/19/SS/005275, Name: Mrs Emem Richard [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,373 INFO: Import 8d92ddfe: Row 11 - Inserting data: URN=DCP/19/SS/005280, Name=Mrs Abigail Etuk, Customer=Mrs Abigail cement shop, Address=174 Eket Oron Road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,373 INFO: Import 8d92ddfe: Row 11 - Successfully inserted outlet URN: DCP/19/SS/005280, Name: Mrs Abigail Etuk [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,375 INFO: Import 8d92ddfe: Row 12 - Inserting data: URN=DCP/19/SS/005281, Name=Mr Okokon Okpoho, Customer=Koko's Building Material, Address=19 Iko Ikwa Road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,375 INFO: Import 8d92ddfe: Row 12 - Successfully inserted outlet URN: DCP/19/SS/005281, Name: Mr Okokon Okpoho [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,379 INFO: Import 8d92ddfe: Row 13 - Inserting data: URN=DCP/19/SS/005282, Name=Mr Nathan Asitok, Customer=Asino Klobal Service, Address=56 Afaha Uqua Rod... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,381 INFO: Import 8d92ddfe: Row 13 - Successfully inserted outlet URN: DCP/19/SS/005282, Name: Mr Nathan Asitok [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,382 INFO: Import 8d92ddfe: Row 14 - Inserting data: URN=DCP/19/SS/005284, Name=Mr Friday Akunna, Customer=Marvel Investment 1, Address=30 Etebi Idiung-Iwak... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,383 INFO: Import 8d92ddfe: Row 14 - Successfully inserted outlet URN: DCP/19/SS/005284, Name: Mr Friday Akunna [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,384 INFO: Import 8d92ddfe: Row 15 - Inserting data: URN=DCP/19/SS/005285, Name=Mr Friday Akunna, Customer=Marvel Investment 2, Address=20 Etebum street... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,385 INFO: Import 8d92ddfe: Row 15 - Successfully inserted outlet URN: DCP/19/SS/005285, Name: Mr Friday Akunna [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,389 INFO: Import 8d92ddfe: Row 16 - Inserting data: URN=DCP/19/SS/005288, Name=Mr Kingsley, Customer=Kingsley Cement Shop, Address=16 Liverpool Road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,390 INFO: Import 8d92ddfe: Row 16 - Successfully inserted outlet URN: DCP/19/SS/005288, Name: Mr Kingsley [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,391 INFO: Import 8d92ddfe: Row 17 - Inserting data: URN=DCP/19/SS/005291, Name=Mrs Enobong Abasiama, Customer=Mrs Enobong Cement Shop, Address=Ikot Udoma Estate Rd... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,392 INFO: Import 8d92ddfe: Row 17 - Successfully inserted outlet URN: DCP/19/SS/005291, Name: Mrs Enobong Abasiama [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,393 INFO: Import 8d92ddfe: Row 18 - Inserting data: URN=DCP/19/SS/005296, Name=Mr Essien Anietie, Customer=Mr Essien Cement Shop, Address=No 1 Mkpo Road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,395 INFO: Import 8d92ddfe: Row 18 - Successfully inserted outlet URN: DCP/19/SS/005296, Name: Mr Essien Anietie [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,396 INFO: Import 8d92ddfe: Row 19 - Inserting data: URN=DCP/19/SS/005298, Name=Mr Dozie Felix, Customer=Dozie Felix Cement Shop, Address=29 Idua Road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,397 INFO: Import 8d92ddfe: Row 19 - Successfully inserted outlet URN: DCP/19/SS/005298, Name: Mr Dozie Felix [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,398 INFO: Import 8d92ddfe: Row 20 - Inserting data: URN=DCP/19/SS/005299, Name=Mr Anietie Samuel, Customer=Anietie Cement Shop, Address=No 1 Okpongkpong off Idua... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,399 INFO: Import 8d92ddfe: Row 20 - Successfully inserted outlet URN: DCP/19/SS/005299, Name: Mr Anietie Samuel [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,400 INFO: Import 8d92ddfe: Row 21 - Inserting data: URN=DCP/19/SS/005306, Name=Mr Udemeobong, Customer=Udemeobong & Sons, Address=176 Idua Road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,401 INFO: Import 8d92ddfe: Row 21 - Successfully inserted outlet URN: DCP/19/SS/005306, Name: Mr Udemeobong [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,406 INFO: Import 8d92ddfe: Row 22 - Inserting data: URN=DCP/19/SS/005494, Name=NDUENSO & SONS, Customer=, Address=EKET-ORON ROAD... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,407 INFO: Import 8d92ddfe: Row 22 - Successfully inserted outlet URN: DCP/19/SS/005494, Name: NDUENSO & SONS [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,408 INFO: Import 8d92ddfe: Row 23 - Inserting data: URN=DCP/19/SS/005500, Name=AKANAM IMOH BLOCKS, Customer=, Address=EKET-ORON ROAD... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,410 INFO: Import 8d92ddfe: Row 23 - Successfully inserted outlet URN: DCP/19/SS/005500, Name: AKANAM IMOH BLOCKS [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,412 INFO: Import 8d92ddfe: Row 24 - Inserting data: URN=DCP/19/SS/005506, Name=RANIL BLOCKS, Customer=, Address=ATEIDUNG IWAK... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,413 INFO: Import 8d92ddfe: Row 24 - Successfully inserted outlet URN: DCP/19/SS/005506, Name: RANIL BLOCKS [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,414 INFO: Import 8d92ddfe: Row 25 - Inserting data: URN=DCP/19/SS/005599, Name=Joseph Udosek, Customer=JosfulSek Global limited, Address=1 mission road, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,415 INFO: Import 8d92ddfe: Row 25 - Successfully inserted outlet URN: DCP/19/SS/005599, Name: Joseph Udosek [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,416 INFO: Import 8d92ddfe: Row 26 - Inserting data: URN=DCP/19/SS/005600, Name=Gideon Udoh, Customer=Didi investment, Address=Park avenue, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,417 INFO: Import 8d92ddfe: Row 26 - Successfully inserted outlet URN: DCP/19/SS/005600, Name: Gideon Udoh [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,421 INFO: Import 8d92ddfe: Row 27 - Inserting data: URN=DCP/19/SS/005601, Name=Monday Lawson, Customer=Lawson quality conscious blocks, Address=Eket Oron road, by James town junction... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,422 INFO: Import 8d92ddfe: Row 27 - Successfully inserted outlet URN: DCP/19/SS/005601, Name: Monday Lawson [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,423 INFO: Import 8d92ddfe: Row 28 - Inserting data: URN=DCP/19/SS/005602, Name=Sunday Asuama, Customer=Suaceo bloks, Address=1 Osu-Amanam estate... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,424 INFO: Import 8d92ddfe: Row 28 - Successfully inserted outlet URN: DCP/19/SS/005602, Name: Sunday Asuama [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,425 INFO: Import 8d92ddfe: Row 29 - Inserting data: URN=DCP/19/SS/005603, Name=Imoh Akanam, Customer=Imoh Akanamblocks industry, Address=17 B Liverpool road, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,425 INFO: Import 8d92ddfe: Row 29 - Successfully inserted outlet URN: DCP/19/SS/005603, Name: Imoh Akanam [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,427 INFO: Import 8d92ddfe: Row 30 - Inserting data: URN=DCP/20/SS/007676, Name=P.A.Achalu Trading Stores, Customer=Mrs Maryjane Achalu, Address=Beside Okon-Eket Judiciary... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,427 INFO: Import 8d92ddfe: Row 30 - Successfully inserted outlet URN: DCP/20/SS/007676, Name: P.A.Achalu Trading Stores [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,429 INFO: Import 8d92ddfe: Row 31 - Inserting data: URN=DCP/20/SS/007677, Name=AniBross Nig, Customer=Mr Anietie Tommy, Address=Beside Gabson Engineering Service,Okon... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,430 INFO: Import 8d92ddfe: Row 31 - Successfully inserted outlet URN: DCP/20/SS/007677, Name: AniBross Nig [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,431 INFO: Import 8d92ddfe: Row 32 - Inserting data: URN=DCP/20/SS/007682, Name=Dozie Felix Cement Shop, Customer=Mr Dozie Felix, Address=No.29 Idua Road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,431 INFO: Import 8d92ddfe: Row 32 - Successfully inserted outlet URN: DCP/20/SS/007682, Name: Dozie Felix Cement Shop [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,432 INFO: Import 8d92ddfe: Row 33 - Inserting data: URN=DCP/20/SS/007683, Name=Oduok-Eneh & Co., Customer=Mr Simon Oduokeneh, Address=No.190 Idua Road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,437 INFO: Import 8d92ddfe: Row 33 - Successfully inserted outlet URN: DCP/20/SS/007683, Name: Oduok-Eneh & Co. [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,438 INFO: Import 8d92ddfe: Row 34 - Inserting data: URN=DCP/20/SS/007684, Name=Uso & Sons, Customer=Mr Mpkombuk, Address=No.10 Ndue-Edue Road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,439 INFO: Import 8d92ddfe: Row 34 - Successfully inserted outlet URN: DCP/20/SS/007684, Name: Uso & Sons [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,440 INFO: Import 8d92ddfe: Row 35 - Inserting data: URN=DCP/20/SS/007685, Name=Ani-best Ventures, Customer=Mr Ani Michael, Address=Uyo Road, Ikot Abasi Village... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,440 INFO: Import 8d92ddfe: Row 35 - Successfully inserted outlet URN: DCP/20/SS/007685, Name: Ani-best Ventures [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,441 INFO: Import 8d92ddfe: Row 36 - Inserting data: URN=DCP/20/SS/007687, Name=Anietie Cement Store, Customer=Mr Anietie, Address=No.1 Okpongkpong Street off Idua... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,442 INFO: Import 8d92ddfe: Row 36 - Successfully inserted outlet URN: DCP/20/SS/007687, Name: Anietie Cement Store [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,443 INFO: Import 8d92ddfe: Row 37 - Inserting data: URN=DCP/20/SS/007688, Name=Nduenso & Sons Concrete Industry, Customer=Mr Sunday Bassey, Address=208 Eket/Oron road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,444 INFO: Import 8d92ddfe: Row 37 - Successfully inserted outlet URN: DCP/20/SS/007688, Name: Nduenso & Sons Concrete Industry [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,445 INFO: Import 8d92ddfe: Row 38 - Inserting data: URN=DCP/20/SS/007690, Name=Asino Klobal Service, Customer=Mr Nathan Asitok, Address=No.56 Afaha Uqua Road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,446 INFO: Import 8d92ddfe: Row 38 - Successfully inserted outlet URN: DCP/20/SS/007690, Name: Asino Klobal Service [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,447 INFO: Import 8d92ddfe: Row 39 - Inserting data: URN=DCP/20/SS/007691, Name=Koko's Building Materials, Customer=Mr Okokon Okpoho, Address=No.19 Iko Ikwa Road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,451 INFO: Import 8d92ddfe: Row 39 - Successfully inserted outlet URN: DCP/20/SS/007691, Name: Koko's Building Materials [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,452 INFO: Import 8d92ddfe: Row 40 - Inserting data: URN=DCP/20/SS/007692, Name=Akanam Commercial Enterprise Shop1, Customer=Mr Akang Thomas, Address=No.3 Park Road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,453 INFO: Import 8d92ddfe: Row 40 - Successfully inserted outlet URN: DCP/20/SS/007692, Name: Akanam Commercial Enterprise Shop1 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,454 INFO: Import 8d92ddfe: Row 41 - Inserting data: URN=DCP/20/SS/007694, Name=Janny Ventures, Customer=Mrs Janet Elijah, Address=No.10 Market Road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,455 INFO: Import 8d92ddfe: Row 41 - Successfully inserted outlet URN: DCP/20/SS/007694, Name: Janny Ventures [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,456 INFO: Import 8d92ddfe: Row 42 - Inserting data: URN=DCP/20/SS/007695, Name=Ranil Blocks Industry, Customer=Mr Edet Essang, Address=No.186 Eket-Oron Road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,456 INFO: Import 8d92ddfe: Row 42 - Successfully inserted outlet URN: DCP/20/SS/007695, Name: Ranil Blocks Industry [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,457 INFO: Import 8d92ddfe: Row 43 - Inserting data: URN=DCP/20/SS/007696, Name=Lowson Quality Conscious Blocks, Customer=Mr Monday Lowson, Address=Adjecent Deeper Life off Oron Road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,458 INFO: Import 8d92ddfe: Row 43 - Successfully inserted outlet URN: DCP/20/SS/007696, Name: Lowson Quality Conscious Blocks [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,459 INFO: Import 8d92ddfe: Row 44 - Inserting data: URN=DCP/20/SS/007697, Name=Builders Warehouse, Customer=Mr Amos Okeke, Address=James Town Road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,462 INFO: Import 8d92ddfe: Row 44 - Successfully inserted outlet URN: DCP/20/SS/007697, Name: Builders Warehouse [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,462 INFO: Import 8d92ddfe: Row 45 - Inserting data: URN=DCP/20/SS/007698, Name=Suago Blocks, Customer=Mr Sunday, Address=By Osu-Akanam Estate Road off Oron Rd... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,463 INFO: Import 8d92ddfe: Row 45 - Successfully inserted outlet URN: DCP/20/SS/007698, Name: Suago Blocks [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,468 INFO: Import 8d92ddfe: Row 46 - Inserting data: URN=DCP/20/SS/007700, Name=Imoh Akanam Blocks Industry, Customer=Mr Imoh Akanam, Address=No.17 Liverpool Road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,469 INFO: Import 8d92ddfe: Row 46 - Successfully inserted outlet URN: DCP/20/SS/007700, Name: Imoh Akanam Blocks Industry [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,470 INFO: Import 8d92ddfe: Row 47 - Inserting data: URN=DCP/20/SS/008044, Name=Jim-E Building Merchant Shop3, Customer=Mr Jimmy Ette, Address=71 Idua road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,471 INFO: Import 8d92ddfe: Row 47 - Successfully inserted outlet URN: DCP/20/SS/008044, Name: Jim-E Building Merchant Shop3 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,472 INFO: Import 8d92ddfe: Row 48 - Inserting data: URN=DCP/20/SS/008047, Name=Udeme-Abasi Quality Cement Shop2, Customer=Mr Udeme-Abasi, Address=Ikot Eyo Junction... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,472 INFO: Import 8d92ddfe: Row 48 - Successfully inserted outlet URN: DCP/20/SS/008047, Name: Udeme-Abasi Quality Cement Shop2 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,473 INFO: Import 8d92ddfe: Row 49 - Inserting data: URN=DCP/20/SS/008889, Name=Sam Blocks, Customer=Mr Samuel Ekefre, Address=35 Park road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,474 INFO: Import 8d92ddfe: Row 49 - Successfully inserted outlet URN: DCP/20/SS/008889, Name: Sam Blocks [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,475 INFO: Import 8d92ddfe: Row 50 - Inserting data: URN=DCP/21/SS/010204, Name=Ukeme-Otoabasi Ventures 1, Customer=Mr Ukeme Sunday, Address=Stracbag Junction... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,475 INFO: Import 8d92ddfe: Row 50 - Successfully inserted outlet URN: DCP/21/SS/010204, Name: Ukeme-Otoabasi Ventures 1 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,478 INFO: Import 8d92ddfe: Row 51 - Inserting data: URN=DCP/21/SS/010207, Name=Ukeme-Otoabasi Ventures 2, Customer=Mr Ukeme Sunday, Address=Ikot Abia road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,479 INFO: Import 8d92ddfe: Row 51 - Successfully inserted outlet URN: DCP/21/SS/010207, Name: Ukeme-Otoabasi Ventures 2 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,483 INFO: Import 8d92ddfe: Row 52 - Inserting data: URN=DCP/21/SS/010209, Name=Best Ventures, Customer=Mr Jimmy Ekpenyong, Address=Opp. QIC Primary School, Ikot Edibon... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,484 INFO: Import 8d92ddfe: Row 52 - Successfully inserted outlet URN: DCP/21/SS/010209, Name: Best Ventures [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,485 INFO: Import 8d92ddfe: Row 53 - Inserting data: URN=DCP/21/SS/010210, Name=Akanam Commercial Enterprise, Customer=Mr Akang Thomas, Address=No.24  Etebi Street... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,486 INFO: Import 8d92ddfe: Row 53 - Successfully inserted outlet URN: DCP/21/SS/010210, Name: Akanam Commercial Enterprise [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,487 INFO: Import 8d92ddfe: Row 54 - Inserting data: URN=DCP/21/SS/010211, Name=Winter Summer Global Service 1, Customer=Lafenax, Address=Opposite Ikot Udota road, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,488 INFO: Import 8d92ddfe: Row 54 - Successfully inserted outlet URN: DCP/21/SS/010211, Name: Winter Summer Global Service 1 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,489 INFO: Import 8d92ddfe: Row 55 - Inserting data: URN=DCP/21/SS/010212, Name=Winter Summer Global Service 2, Customer=Lafenax, Address=Opposite Ikot Udota road, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,489 INFO: Import 8d92ddfe: Row 55 - Successfully inserted outlet URN: DCP/21/SS/010212, Name: Winter Summer Global Service 2 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,490 INFO: Import 8d92ddfe: Row 56 - Inserting data: URN=DCP/21/SS/010213, Name=Nokia Steel Shop3, Customer=Mr Solomon Udegebe, Address=By Iko Ikwa Junction... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,491 INFO: Import 8d92ddfe: Row 56 - Successfully inserted outlet URN: DCP/21/SS/010213, Name: Nokia Steel Shop3 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,492 INFO: Import 8d92ddfe: Row 57 - Inserting data: URN=DCP/21/SS/010214, Name=Sen- Sunny Intergrated Service, Customer=Mrs Agnes Udosen, Address=By Nice Mab Petroleum... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,493 INFO: Import 8d92ddfe: Row 57 - Successfully inserted outlet URN: DCP/21/SS/010214, Name: Sen- Sunny Intergrated Service [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,494 INFO: Import 8d92ddfe: Row 58 - Inserting data: URN=DCP/21/SS/010217, Name=Sakpakpan Nigeria International, Customer=Mr Solomon Akpakpan, Address=No 14 Hospital Road, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,495 INFO: Import 8d92ddfe: Row 58 - Successfully inserted outlet URN: DCP/21/SS/010217, Name: Sakpakpan Nigeria International [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,500 INFO: Import 8d92ddfe: Row 59 - Inserting data: URN=DCP/21/SS/010218, Name=K.E.O. Merchandise, Customer=Mr Chris Okafor, Address=No.56 RCC Road, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,501 INFO: Import 8d92ddfe: Row 59 - Successfully inserted outlet URN: DCP/21/SS/010218, Name: K.E.O. Merchandise [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,502 INFO: Import 8d92ddfe: Row 60 - Inserting data: URN=DCP/21/SS/010219, Name=K.E.O. Merchandise, Customer=Mr Chris Okafor 2, Address=No.56 RCC Road, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,503 INFO: Import 8d92ddfe: Row 60 - Successfully inserted outlet URN: DCP/21/SS/010219, Name: K.E.O. Merchandise [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,504 INFO: Import 8d92ddfe: Row 61 - Inserting data: URN=DCP/21/SS/010847, Name=Sakpakpan Nigeria International 3, Customer=Mr Solomon Akpakpan, Address=No.14b Hospital Road, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,505 INFO: Import 8d92ddfe: Row 61 - Successfully inserted outlet URN: DCP/21/SS/010847, Name: Sakpakpan Nigeria International 3 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,505 INFO: Import 8d92ddfe: Row 62 - Inserting data: URN=DCP/21/SS/010848, Name=Aneoh Global Nigeria, Customer=Mr Martin Anietie Umoh, Address=No.3b Etebi Idong-iwak Road, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,506 INFO: Import 8d92ddfe: Row 62 - Successfully inserted outlet URN: DCP/21/SS/010848, Name: Aneoh Global Nigeria [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,507 INFO: Import 8d92ddfe: Row 63 - Inserting data: URN=DCP/21/SS/010849, Name=Kristex Nigeria Ventures, Customer=Mr Chris Okodugha, Address=No.5 Uqua Road, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,508 INFO: Import 8d92ddfe: Row 63 - Successfully inserted outlet URN: DCP/21/SS/010849, Name: Kristex Nigeria Ventures [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,509 INFO: Import 8d92ddfe: Row 64 - Inserting data: URN=DCP/21/SS/010850, Name=Chikeson Ezekwe Steel Ventures, Customer=Mr Chike Ezekwe, Address=No.19 Ikot Ibiok Road before Ikot Udoma junction, ... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,510 INFO: Import 8d92ddfe: Row 64 - Successfully inserted outlet URN: DCP/21/SS/010850, Name: Chikeson Ezekwe Steel Ventures [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,515 INFO: Import 8d92ddfe: Row 65 - Inserting data: URN=DCP/21/SS/010852, Name=King's Global Nigeria, Customer=Mr Kingsley Urumba, Address=No.21 Liverpool Road, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,516 INFO: Import 8d92ddfe: Row 65 - Successfully inserted outlet URN: DCP/21/SS/010852, Name: King's Global Nigeria [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,517 INFO: Import 8d92ddfe: Row 66 - Inserting data: URN=DCP/21/SS/010853, Name=Muzasion Cement Enterprise, Customer=Mr Henry Isaiah, Address=No.34 Etebom Street, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,518 INFO: Import 8d92ddfe: Row 66 - Successfully inserted outlet URN: DCP/21/SS/010853, Name: Muzasion Cement Enterprise [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,518 INFO: Import 8d92ddfe: Row 67 - Inserting data: URN=DCP/22/SS/011096, Name=Ranil Blocks industry 2, Customer=Mrs Felicia Edet, Address=No. 62 Etebi Idong-Iwak Road, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,519 INFO: Import 8d92ddfe: Row 67 - Successfully inserted outlet URN: DCP/22/SS/011096, Name: Ranil Blocks industry 2 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,520 INFO: Import 8d92ddfe: Row 68 - Inserting data: URN=DCP/22/SS/011097, Name=Chikiss Blocks, Customer=Mr Chikodili Chijioke, Address=Kilometer 6 Eket/Oron Road, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,521 INFO: Import 8d92ddfe: Row 68 - Successfully inserted outlet URN: DCP/22/SS/011097, Name: Chikiss Blocks [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,522 INFO: Import 8d92ddfe: Row 69 - Inserting data: URN=DCP/22/SS/011497, Name=Jazzy Cement, Customer=Mr Jazzy Henry, Address=1 Akanimo Street, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,522 INFO: Import 8d92ddfe: Row 69 - Successfully inserted outlet URN: DCP/22/SS/011497, Name: Jazzy Cement [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,523 INFO: Import 8d92ddfe: Row 70 - Inserting data: URN=DCP/22/SS/011669, Name=Friday Akunna, Customer=Marvel Investment Shop 2, Address=30 Etebi Idung-Iwak road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,524 INFO: Import 8d92ddfe: Row 70 - Successfully inserted outlet URN: DCP/22/SS/011669, Name: Friday Akunna [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,525 INFO: Import 8d92ddfe: Row 71 - Inserting data: URN=DCP/22/SS/012093, Name=Sunnexon Global Services, Customer=Mr Sunny Ituen, Address=Km 5, Eket Oron road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,528 INFO: Import 8d92ddfe: Row 71 - Successfully inserted outlet URN: DCP/22/SS/012093, Name: Sunnexon Global Services [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,532 INFO: Import 8d92ddfe: Row 72 - Inserting data: URN=DCP/23/SS/012423, Name=UK Mfon Bless Enterprise, Customer=Mr Emmanuel James, Address=Park road, opposite Heritage Diagnostic... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,533 INFO: Import 8d92ddfe: Row 72 - Successfully inserted outlet URN: DCP/23/SS/012423, Name: UK Mfon Bless Enterprise [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,534 INFO: Import 8d92ddfe: Row 73 - Inserting data: URN=DCP/23/SS/012424, Name=Grace Cement Ventures, Customer=Mrs Grace Ukpah, Address=8 Ndue Eduo road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,535 INFO: Import 8d92ddfe: Row 73 - Successfully inserted outlet URN: DCP/23/SS/012424, Name: Grace Cement Ventures [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,536 INFO: Import 8d92ddfe: Row 74 - Inserting data: URN=DCP/23/SS/012515, Name=Edidem Enterprise, Customer=Mr Raphael Etim, Address=Ibekwe, Mkpat Enin... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,537 INFO: Import 8d92ddfe: Row 74 - Successfully inserted outlet URN: DCP/23/SS/012515, Name: Edidem Enterprise [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,538 INFO: Import 8d92ddfe: Row 75 - Inserting data: URN=DCP/23/SS/012516, Name=Uwekon Enterprises, Customer=Mrs Uwem Ekpo, Address=Odoro Enen Village... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,538 INFO: Import 8d92ddfe: Row 75 - Successfully inserted outlet URN: DCP/23/SS/012516, Name: Uwekon Enterprises [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,539 INFO: Import 8d92ddfe: Row 76 - Inserting data: URN=DCP/23/SS/012517, Name=Udemeobong & Sons, Customer=Mr Wilson Peter, Address=179 Idua Road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,540 INFO: Import 8d92ddfe: Row 76 - Successfully inserted outlet URN: DCP/23/SS/012517, Name: Udemeobong & Sons [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,541 INFO: Import 8d92ddfe: Row 77 - Inserting data: URN=DCP/23/SS/012593, Name=Kiuwets Creation Block Factory, Customer=Mr. Ubong Udongo, Address=177 Eket Oron road, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,542 INFO: Import 8d92ddfe: Row 77 - Successfully inserted outlet URN: DCP/23/SS/012593, Name: Kiuwets Creation Block Factory [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,548 INFO: Import 8d92ddfe: Row 78 - Inserting data: URN=DCP/24/SS/13685, Name=Godwin Buildings &Son's, Customer=Godwin Arinze, Address=By Stracbag Junction, Eket.... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,549 INFO: Import 8d92ddfe: Row 78 - Successfully inserted outlet URN: DCP/24/SS/13685, Name: Godwin Buildings &Son's [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,550 INFO: Import 8d92ddfe: Row 79 - Inserting data: URN=DCP/24/SS/13763, Name=Ekong Deup Global Limited, Customer=Daniel Okon Jacob, Address=No.1 ikot Odiong, James Town road, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,551 INFO: Import 8d92ddfe: Row 79 - Successfully inserted outlet URN: DCP/24/SS/13763, Name: Ekong Deup Global Limited [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,551 INFO: Import 8d92ddfe: Row 80 - Inserting data: URN=DCP/24/SS/13914, Name=Grace cement venture, Customer=Grace Ukpa, Address=No.8 Edue Eduo Road Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,552 INFO: Import 8d92ddfe: Row 80 - Successfully inserted outlet URN: DCP/24/SS/13914, Name: Grace cement venture [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,553 INFO: Import 8d92ddfe: Row 81 - Inserting data: URN=DCP/24/SS/14023, Name=Banias Integrated Services, Customer=Godwin Etim, Address=By James Town Junction, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,554 INFO: Import 8d92ddfe: Row 81 - Successfully inserted outlet URN: DCP/24/SS/14023, Name: Banias Integrated Services [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,555 INFO: Import 8d92ddfe: Row 82 - Inserting data: URN=DCP/24/SS/14026, Name=Chizoba Favour Enterprise, Customer=Chizoba Nwaokoye, Address=Behind Okon-Eket Health Center By The New Road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,555 INFO: Import 8d92ddfe: Row 82 - Successfully inserted outlet URN: DCP/24/SS/14026, Name: Chizoba Favour Enterprise [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,556 INFO: Import 8d92ddfe: Row 83 - Inserting data: URN=DCP/25/SS/15103, Name=God's Will Ventures, Customer=Uchechukwu Ubah, Address=No. 160 Eket/Oron Road, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,557 INFO: Import 8d92ddfe: Row 83 - Successfully inserted outlet URN: DCP/25/SS/15103, Name: God's Will Ventures [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,558 INFO: Import 8d92ddfe: Row 84 - Inserting data: URN=DCP/25/SS/15201, Name=Victor Cement, Customer=Victoria Udofia, Address=No. 160 Eket/Oron Road, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,564 INFO: Import 8d92ddfe: Row 84 - Successfully inserted outlet URN: DCP/25/SS/15201, Name: Victor Cement [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,565 INFO: Import 8d92ddfe: Row 85 - Inserting data: URN=DCP/25/SS/15251, Name=Jesmbo Blocks Industry, Customer=Edeh James Onwe, Address=179 Eket/Oron... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,566 INFO: Import 8d92ddfe: Row 85 - Successfully inserted outlet URN: DCP/25/SS/15251, Name: Jesmbo Blocks Industry [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,567 INFO: Import 8d92ddfe: Row 86 - Inserting data: URN=DCP/25/SS/15252, Name=Blessed Emitex, Customer=Festus, Address=Beside Timber market, James town Junction, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,567 INFO: Import 8d92ddfe: Row 86 - Successfully inserted outlet URN: DCP/25/SS/15252, Name: Blessed Emitex [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,568 INFO: Import 8d92ddfe: Row 87 - Inserting data: URN=DCP/22/SS/011668, Name=Friday Akunna, Customer=Marvel Investment Shop 1, Address=30 Etebom Street... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,569 INFO: Import 8d92ddfe: Row 87 - Successfully inserted outlet URN: DCP/22/SS/011668, Name: Friday Akunna [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,570 INFO: Import 8d92ddfe: Row 88 - Inserting data: URN=DCP/25/SS/14774, Name=Nsikak's Cement Shop, Customer=Nsikak Samuel Bassey, Address=Beside Uqua Town Hall off Uqua Road, Eket.... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,571 INFO: Import 8d92ddfe: Row 88 - Successfully inserted outlet URN: DCP/25/SS/14774, Name: Nsikak's Cement Shop [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,571 INFO: Import 8d92ddfe: Row 89 - Inserting data: URN=DCP/25/SS/15102, Name=Ekere Cement, Customer=Ekere Udo James, Address=No. 6 Old Eket-Etinan Road, Eket.... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,572 INFO: Import 8d92ddfe: Row 89 - Successfully inserted outlet URN: DCP/25/SS/15102, Name: Ekere Cement [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,573 INFO: Import 8d92ddfe: Row 90 - Inserting data: URN=DCP/25/SS/15432, Name=Victor Udofia Cement, Customer=Victor Udofia, Address=No.1 Usua Amanam Estate Road,  Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,574 INFO: Import 8d92ddfe: Row 90 - Successfully inserted outlet URN: DCP/25/SS/15432, Name: Victor Udofia Cement [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,579 INFO: Import 8d92ddfe: Row 91 - Inserting data: URN=DCP/25/SS/15433, Name=Jesmbo Blocks Industry, Customer=Mr Edeh James Onwe, Address=No. 177 Eket Oron Road, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,580 INFO: Import 8d92ddfe: Row 91 - Successfully inserted outlet URN: DCP/25/SS/15433, Name: Jesmbo Blocks Industry [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,581 INFO: Import 8d92ddfe: Row 92 - Inserting data: URN=DCP/25/SS/15448, Name=Blessed  Pee Cee Cee Nig. Limited, Customer=Kalu Peter  Umah, Address=No.36 Eket Oron Road, Eket... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,582 INFO: Import 8d92ddfe: Row 92 - Successfully inserted outlet URN: DCP/25/SS/15448, Name: Blessed  Pee Cee Cee Nig. Limited [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,583 INFO: Import 8d92ddfe: Row 93 - Inserting data: URN=DCP/20/SS/007689, Name=Nkanta & Sons, Customer=Mr Nkanta, Address=Opposite Deeper life, Ekpene-Obo... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,584 INFO: Import 8d92ddfe: Row 93 - Successfully inserted outlet URN: DCP/20/SS/007689, Name: Nkanta & Sons [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,585 INFO: Import 8d92ddfe: Row 94 - Inserting data: URN=DCP/20/SS/007795, Name=Nnamso Shop, Customer=Nnamso Etukudo, Address=Essien  Udim... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,585 INFO: Import 8d92ddfe: Row 94 - Successfully inserted outlet URN: DCP/20/SS/007795, Name: Nnamso Shop [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,586 INFO: Import 8d92ddfe: Row 95 - Inserting data: URN=DCP/20/SS/007796, Name=Uduak shop, Customer=Uduak Useh, Address=Essien  Udim... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,587 INFO: Import 8d92ddfe: Row 95 - Successfully inserted outlet URN: DCP/20/SS/007796, Name: Uduak shop [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,588 INFO: Import 8d92ddfe: Row 96 - Inserting data: URN=DCP/20/SS/007797, Name=Aniebiet Enterprise, Customer=Aniebiet Linus, Address=Essien  Udim... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,589 INFO: Import 8d92ddfe: Row 96 - Successfully inserted outlet URN: DCP/20/SS/007797, Name: Aniebiet Enterprise [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,589 INFO: Import 8d92ddfe: Row 97 - Inserting data: URN=DCP/20/SS/007798, Name=Ekemini Shop, Customer=Ekemini Cyril Akpan, Address=Essien  Udim... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,597 INFO: Import 8d92ddfe: Row 97 - Successfully inserted outlet URN: DCP/20/SS/007798, Name: Ekemini Shop [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,597 INFO: Import 8d92ddfe: Row 98 - Inserting data: URN=DCP/20/SS/007799, Name=Edidiong cement shop, Customer=Edidiong Sunday Udoka, Address=Essien  Udim... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,598 INFO: Import 8d92ddfe: Row 98 - Successfully inserted outlet URN: DCP/20/SS/007799, Name: Edidiong cement shop [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,599 INFO: Import 8d92ddfe: Row 99 - Inserting data: URN=DCP/20/SS/007800, Name=PST Akan cement shop, Customer=Pastor Akan Edine, Address=Essien  Udim... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,600 INFO: Import 8d92ddfe: Row 99 - Successfully inserted outlet URN: DCP/20/SS/007800, Name: PST Akan cement shop [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,600 INFO: Import 8d92ddfe: Row 100 - Inserting data: URN=DCP/20/SS/007801, Name=Sylvanus  Shop, Customer=Sylvania Dennis, Address=Urua Afa Obo  Okon... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,601 INFO: Import 8d92ddfe: Row 100 - Successfully inserted outlet URN: DCP/20/SS/007801, Name: Sylvanus  Shop [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,602 INFO: Import 8d92ddfe: Row 101 - Inserting data: URN=DCP/20/SS/007802, Name=Eseme Mendie Shop, Customer=Eseme Mendie, Address=Umon Okon... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,603 INFO: Import 8d92ddfe: Row 101 - Successfully inserted outlet URN: DCP/20/SS/007802, Name: Eseme Mendie Shop [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,604 INFO: Import 8d92ddfe: Row 102 - Inserting data: URN=DCP/20/SS/007803, Name=Bassey  William shoo, Customer=Bassey  William shop, Address=Odoro Ikot junction... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,604 INFO: Import 8d92ddfe: Row 102 - Successfully inserted outlet URN: DCP/20/SS/007803, Name: Bassey  William shoo [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,609 INFO: Import 8d92ddfe: Row 103 - Inserting data: URN=DCP/20/SS/007804, Name=Willie & Sons, Customer=Willie, Address=Odoro Ikot... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,610 INFO: Import 8d92ddfe: Row 103 - Successfully inserted outlet URN: DCP/20/SS/007804, Name: Willie & Sons [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,613 INFO: Import 8d92ddfe: Row 104 - Inserting data: URN=DCP/20/SS/007805, Name=Linus Okoro Cement, Customer=Linus Okoro, Address=Odoro Ikot... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,613 INFO: Import 8d92ddfe: Row 104 - Successfully inserted outlet URN: DCP/20/SS/007805, Name: Linus Okoro Cement [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,614 INFO: Import 8d92ddfe: Row 105 - Inserting data: URN=DCP/20/SS/007806, Name=Solomon Asuquo Shop, Customer=Solomon Asuquo, Address=Afaha Ikot Ebak... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,615 INFO: Import 8d92ddfe: Row 105 - Successfully inserted outlet URN: DCP/20/SS/007806, Name: Solomon Asuquo Shop [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,615 INFO: Import 8d92ddfe: Row 106 - Inserting data: URN=DCP/20/SS/007807, Name=Udeme Ibanga, Customer=UDEME IBANGA, Address=Ekpenyong Atai... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,616 INFO: Import 8d92ddfe: Row 106 - Successfully inserted outlet URN: DCP/20/SS/007807, Name: Udeme Ibanga [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,617 INFO: Import 8d92ddfe: Row 107 - Inserting data: URN=DCP/20/SS/007808, Name=Aniedi Matthew, Customer=Aniedi Matthew, Address=Ukana Iba... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,618 INFO: Import 8d92ddfe: Row 107 - Successfully inserted outlet URN: DCP/20/SS/007808, Name: Aniedi Matthew [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,619 INFO: Import 8d92ddfe: Row 108 - Inserting data: URN=DCP/20/SS/007809, Name=God Is God, Customer=God Is God, Address=Obong Amanda junction... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,619 INFO: Import 8d92ddfe: Row 108 - Successfully inserted outlet URN: DCP/20/SS/007809, Name: God Is God [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,620 INFO: Import 8d92ddfe: Row 109 - Inserting data: URN=DCP/20/SS/007810, Name=Ndifreke Udo Iduna, Customer=Ndifreke Udo Iduna, Address=Uwa junction... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,626 INFO: Import 8d92ddfe: Row 109 - Successfully inserted outlet URN: DCP/20/SS/007810, Name: Ndifreke Udo Iduna [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,627 INFO: Import 8d92ddfe: Row 110 - Inserting data: URN=DCP/20/SS/007811, Name=Idongesit Edong, Customer=Idongesit Edong, Address=Ukana... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,628 INFO: Import 8d92ddfe: Row 110 - Successfully inserted outlet URN: DCP/20/SS/007811, Name: Idongesit Edong [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,629 INFO: Import 8d92ddfe: Row 111 - Inserting data: URN=DCP/20/SS/007812, Name=Ofon-Mbuk Etim Peter, Customer=Ofon-Mbuk Etim Peter, Address=Ukana... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,630 INFO: Import 8d92ddfe: Row 111 - Successfully inserted outlet URN: DCP/20/SS/007812, Name: Ofon-Mbuk Etim Peter [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,631 INFO: Import 8d92ddfe: Row 112 - Inserting data: URN=DCP/20/SS/007813, Name=Ime Umanah, Customer=Ime Umanah, Address=Ukana Iba... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,631 INFO: Import 8d92ddfe: Row 112 - Successfully inserted outlet URN: DCP/20/SS/007813, Name: Ime Umanah [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,632 INFO: Import 8d92ddfe: Row 113 - Inserting data: URN=DCP/19/SS/005375, Name=Efiok  Ete, Customer=Efiok -.Ete  Enterprise, Address=Ukana Ikot Ntuen, Essien Udim... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,633 INFO: Import 8d92ddfe: Row 113 - Successfully inserted outlet URN: DCP/19/SS/005375, Name: Efiok  Ete [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,634 INFO: Import 8d92ddfe: Row 114 - Inserting data: URN=DCP/19/SS/004729, Name=Idongesit Investment, Customer=Idongesit, Address=Ikpe Annang Juction... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,635 INFO: Import 8d92ddfe: Row 114 - Successfully inserted outlet URN: DCP/19/SS/004729, Name: Idongesit Investment [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,636 INFO: Import 8d92ddfe: Row 115 - Inserting data: URN=DCP/19/SS/004730, Name=UK- Polly Enterprise, Customer=Ukeme, Address=Ikpe Annang opposite King Charles Filling Station... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,637 INFO: Import 8d92ddfe: Row 115 - Successfully inserted outlet URN: DCP/19/SS/004730, Name: UK- Polly Enterprise [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,641 INFO: Import 8d92ddfe: Row 116 - Inserting data: URN=DCP/19/SS/004731, Name=Mfon - Obong & Sons Trading Company, Customer=Mfonobong Udo, Address=Ikpe Annang... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,643 INFO: Import 8d92ddfe: Row 116 - Successfully inserted outlet URN: DCP/19/SS/004731, Name: Mfon - Obong & Sons Trading Company [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,645 INFO: Import 8d92ddfe: Row 117 - Inserting data: URN=DCP/20/SS/008888, Name=Anico & Son, Customer=Aniedi Akpan Matthew, Address=9 Ukana Iba... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,646 INFO: Import 8d92ddfe: Row 117 - Successfully inserted outlet URN: DCP/20/SS/008888, Name: Anico & Son [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,647 INFO: Import 8d92ddfe: Row 118 - Inserting data: URN=DCP/20/SS/008912, Name=Uduak Cement, Customer=Uduak Isong, Address=Adiasim... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,648 INFO: Import 8d92ddfe: Row 118 - Successfully inserted outlet URN: DCP/20/SS/008912, Name: Uduak Cement [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,649 INFO: Import 8d92ddfe: Row 119 - Inserting data: URN=DCP/20/SS/008917, Name=Jopertex Global Servicing, Customer=Joshua Gabriel Udom, Address=8 Police Station Rd, Ikpe Ikot Akpan... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,650 INFO: Import 8d92ddfe: Row 119 - Successfully inserted outlet URN: DCP/20/SS/008917, Name: Jopertex Global Servicing [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,651 INFO: Import 8d92ddfe: Row 120 - Inserting data: URN=DCP/21/SS/010238, Name=lme Muffat, Customer=lme Muffat, Address=Essien Udim... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,655 INFO: Import 8d92ddfe: Row 120 - Successfully inserted outlet URN: DCP/21/SS/010238, Name: lme Muffat [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,656 INFO: Import 8d92ddfe: Row 121 - Inserting data: URN=DCP/21/SS/010245, Name=Josephine Asian, Customer=Josephine Asian, Address=Essien Udim... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,657 INFO: Import 8d92ddfe: Row 121 - Successfully inserted outlet URN: DCP/21/SS/010245, Name: Josephine Asian [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,658 INFO: Import 8d92ddfe: Row 122 - Inserting data: URN=DCP/21/SS/010249, Name=Udom Ntia &  Sons, Customer=Udom Ntia &  Sons, Address=Essien Udim... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,663 INFO: Import 8d92ddfe: Row 122 - Successfully inserted outlet URN: DCP/21/SS/010249, Name: Udom Ntia &  Sons [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,664 INFO: Import 8d92ddfe: Row 123 - Inserting data: URN=DCP/21/SS/010253, Name=Usoro Friday, Customer=Usoro Friday, Address=Essien Udim... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,665 INFO: Import 8d92ddfe: Row 123 - Successfully inserted outlet URN: DCP/21/SS/010253, Name: Usoro Friday [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,666 INFO: Import 8d92ddfe: Row 124 - Inserting data: URN=DCP/21/SS/010254, Name=Otobong Ekpenyong, Customer=Otobong Ekpenyong, Address=Essien Udim... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,667 INFO: Import 8d92ddfe: Row 124 - Successfully inserted outlet URN: DCP/21/SS/010254, Name: Otobong Ekpenyong [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,668 INFO: Import 8d92ddfe: Row 125 - Inserting data: URN=DCP/21/SS/010255, Name=Ndifreke Dominic, Customer=Ndifreke Dominic, Address=Essien Udim... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,673 INFO: Import 8d92ddfe: Row 125 - Successfully inserted outlet URN: DCP/21/SS/010255, Name: Ndifreke Dominic [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,674 INFO: Import 8d92ddfe: Row 126 - Inserting data: URN=DCP/21/SS/010264, Name=Etop Andrew, Customer=Etop Andrew, Address=Ikpe Essien Udim... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,675 INFO: Import 8d92ddfe: Row 126 - Successfully inserted outlet URN: DCP/21/SS/010264, Name: Etop Andrew [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,680 INFO: Import 8d92ddfe: Row 127 - Inserting data: URN=DCP/21/SS/010265, Name=Philip Dan, Customer=Philip Dan, Address=Nto  Nsek , Essien Udim... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,682 INFO: Import 8d92ddfe: Row 127 - Successfully inserted outlet URN: DCP/21/SS/010265, Name: Philip Dan [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,682 INFO: Import 8d92ddfe: Row 128 - Inserting data: URN=DCP/21/SS/010280, Name=Ime Umana, Customer=Ime Umana, Address=Ukana lba, Essien Udim... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,686 INFO: Import 8d92ddfe: Row 128 - Successfully inserted outlet URN: DCP/21/SS/010280, Name: Ime Umana [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,687 INFO: Import 8d92ddfe: Row 129 - Inserting data: URN=DCP/21/SS/010284, Name=Ndifreke Dominic, Customer=Ndifreke Dominic, Address=Ikot Ocho,Okon, Essien Udim... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,690 INFO: Import 8d92ddfe: Row 129 - Successfully inserted outlet URN: DCP/21/SS/010284, Name: Ndifreke Dominic [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,690 INFO: Import 8d92ddfe: Row 130 - Inserting data: URN=DCP/22/SS/011125, Name=Akpan Afia & Bros, Customer=Mr Akpan Afia, Address=Urua Afa... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,691 INFO: Import 8d92ddfe: Row 130 - Successfully inserted outlet URN: DCP/22/SS/011125, Name: Akpan Afia & Bros [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,693 INFO: Import 8d92ddfe: Row 131 - Inserting data: URN=DCP/22/SS/011494, Name=Aims E. Ventures, Customer=Nse Udowo, Address=Urua Afa, Essien Udim... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,694 INFO: Import 8d92ddfe: Row 131 - Successfully inserted outlet URN: DCP/22/SS/011494, Name: Aims E. Ventures [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,696 INFO: Import 8d92ddfe: Row 132 - Inserting data: URN=DCP/22/SS/011495, Name=Udy Enterprise, Customer=Usual Sunday Udomah, Address=Udua Akpan, Essien Udim... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,696 INFO: Import 8d92ddfe: Row 132 - Successfully inserted outlet URN: DCP/22/SS/011495, Name: Udy Enterprise [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,697 INFO: Import 8d92ddfe: Row 133 - Inserting data: URN=DCP/22/SS/011496, Name=Ofono Ntuen Enterprise, Customer=Sylvanus Denis, Address=Urua Afa, Essien Udim... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,702 INFO: Import 8d92ddfe: Row 133 - Successfully inserted outlet URN: DCP/22/SS/011496, Name: Ofono Ntuen Enterprise [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,703 INFO: Import 8d92ddfe: Row 134 - Inserting data: URN=DCP/23/SS/012484, Name=Augustine Nig. Enterprise, Customer=Augustine Daniel, Address=Urua Edet... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,704 INFO: Import 8d92ddfe: Row 134 - Successfully inserted outlet URN: DCP/23/SS/012484, Name: Augustine Nig. Enterprise [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,705 INFO: Import 8d92ddfe: Row 135 - Inserting data: URN=DCP/24/SS/13851, Name=Raphael Cement Store, Customer=Raphael Ukpong, Address=Ikpe Annang Junction... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,706 INFO: Import 8d92ddfe: Row 135 - Successfully inserted outlet URN: DCP/24/SS/13851, Name: Raphael Cement Store [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,707 INFO: Import 8d92ddfe: Row 136 - Inserting data: URN=DCP/24/SS/13879, Name=OTOBONG CEMENT, Customer=OTOBONG EKPENYONG, Address=OTOBONG EKPENYONG... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,708 INFO: Import 8d92ddfe: Row 136 - Successfully inserted outlet URN: DCP/24/SS/13879, Name: OTOBONG CEMENT [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,710 INFO: Import 8d92ddfe: Row 137 - Inserting data: URN=DCP/24/SS/14486, Name=Imowo Mathew Company, Customer=Imowo Mathew, Address=Ekpenyong... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,710 INFO: Import 8d92ddfe: Row 137 - Successfully inserted outlet URN: DCP/24/SS/14486, Name: Imowo Mathew Company [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,712 INFO: Import 8d92ddfe: Row 138 - Inserting data: URN=DCP/25/SS/15193, Name=Jumbo Plaza 1, Customer=Raphael Ukpong, Address=Ikpe  Annang Junction,Essien Udim... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,713 INFO: Import 8d92ddfe: Row 138 - Successfully inserted outlet URN: DCP/25/SS/15193, Name: Jumbo Plaza 1 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,714 INFO: Import 8d92ddfe: Row 139 - Inserting data: URN=DCP/24/SS/14600, Name=Aniedi & Sons 2, Customer=Aniedi Mathew, Address=Ukana Iba... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,719 INFO: Import 8d92ddfe: Row 139 - Successfully inserted outlet URN: DCP/24/SS/14600, Name: Aniedi & Sons 2 [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,720 INFO: Import 8d92ddfe: Row 140 - Inserting data: URN=DCP/20/SS/007850, Name=Ndueso Sunday Peter, Customer=Ndueso Sunday Peter, Address=Etim Ekpo road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,721 INFO: Import 8d92ddfe: Row 140 - Successfully inserted outlet URN: DCP/20/SS/007850, Name: Ndueso Sunday Peter [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,722 INFO: Import 8d92ddfe: Row 141 - Inserting data: URN=DCP/20/SS/007851, Name=Koko Umo Ukpong, Customer=Koko Umo Ukpong, Address=Etim Ekpo road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,723 INFO: Import 8d92ddfe: Row 141 - Successfully inserted outlet URN: DCP/20/SS/007851, Name: Koko Umo Ukpong [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,723 INFO: Import 8d92ddfe: Row 142 - Inserting data: URN=DCP/20/SS/007852, Name=Ekpuk Etukuodo, Customer=Ekpuk Etukuodo, Address=Etim Ekpo road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,724 INFO: Import 8d92ddfe: Row 142 - Successfully inserted outlet URN: DCP/20/SS/007852, Name: Ekpuk Etukuodo [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,725 INFO: Import 8d92ddfe: Row 143 - Inserting data: URN=DCP/20/SS/007853, Name=Linus Frank Umoh, Customer=Linus Frank Umoh, Address=Etim Ekpo road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,726 INFO: Import 8d92ddfe: Row 143 - Successfully inserted outlet URN: DCP/20/SS/007853, Name: Linus Frank Umoh [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,729 INFO: Import 8d92ddfe: Row 144 - Inserting data: URN=DCP/20/SS/007854, Name=Elijah Ibekwe, Customer=Elijah Ibekwe, Address=Etim Ekpo road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,734 INFO: Import 8d92ddfe: Row 144 - Successfully inserted outlet URN: DCP/20/SS/007854, Name: Elijah Ibekwe [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,734 INFO: Import 8d92ddfe: Row 145 - Inserting data: URN=DCP/20/SS/008884, Name=Udejoh Nig Ltd, Customer=Udeme Johnson AKPAN, Address=Eka Offion, Eka Uruk Eshiet... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,735 INFO: Import 8d92ddfe: Row 145 - Successfully inserted outlet URN: DCP/20/SS/008884, Name: Udejoh Nig Ltd [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,736 INFO: Import 8d92ddfe: Row 146 - Inserting data: URN=DCP/20/SS/009140, Name=Udejoh Nig Ltd, Customer=Udeme Johnson AKPAN, Address=Eka Affiong Road... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,737 INFO: Import 8d92ddfe: Row 146 - Successfully inserted outlet URN: DCP/20/SS/009140, Name: Udejoh Nig Ltd [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,738 INFO: Import 8d92ddfe: Row 147 - Inserting data: URN=DCP/21/SS/010250, Name=Solomon Emmanson, Customer=Solomon Emmanson, Address=Etim Ekpo... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,739 INFO: Import 8d92ddfe: Row 147 - Successfully inserted outlet URN: DCP/21/SS/010250, Name: Solomon Emmanson [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,740 INFO: Import 8d92ddfe: Row 148 - Inserting data: URN=DCP/21/SS/010283, Name=Friday Udo Ekpo, Customer=Friday Udo Ekpo, Address=Etim Ekpo... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,740 INFO: Import 8d92ddfe: Row 148 - Successfully inserted outlet URN: DCP/21/SS/010283, Name: Friday Udo Ekpo [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,741 INFO: Import 8d92ddfe: Row 149 - Inserting data: URN=DCP/21/SS/010289, Name=Rebecca Friday, Customer=Rebecca Friday, Address=Eka Obong, Etim Ekpo... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,742 INFO: Import 8d92ddfe: Row 149 - Successfully inserted outlet URN: DCP/21/SS/010289, Name: Rebecca Friday [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,745 INFO: Import 8d92ddfe: Row 150 - Inserting data: URN=DCP/22/SS/011670, Name=Unyime Matthew, Customer=De Mayor Resources 2, Address=Old Urua Obo, Iwukem road, Etim Ekpo... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,749 INFO: Import 8d92ddfe: Row 150 - Successfully inserted outlet URN: DCP/22/SS/011670, Name: Unyime Matthew [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,750 INFO: Import 8d92ddfe: Row 151 - Inserting data: URN=DCP/23/SS/012625, Name=Goldie Multi Business Ventures, Customer=Goldie Emuchay, Address=Iwukem... [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:710]
+2025-11-03 10:05:43,751 INFO: Import 8d92ddfe: Row 151 - Successfully inserted outlet URN: DCP/23/SS/012625, Name: Goldie Multi Business Ventures [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:718]
+2025-11-03 10:05:43,889 INFO: Import 8d92ddfe completed: 150 rows processed, 150 new outlets created, 0 existing outlets updated, 0 errors encountered [in C:\Users\DELL\Documents\devs\betadev\app_admin.py:737]
+2025-11-09 22:17:06,609 INFO: Dangote Execution Tracker startup [in C:\Users\DELL\Documents\devs\betadev\app.py:24]
+2025-11-09 22:17:08,309 INFO: Dangote Execution Tracker startup [in C:\Users\DELL\Documents\devs\betadev\app.py:24]
+2025-11-09 22:51:22,394 INFO: Dangote Execution Tracker startup [in C:\Users\DELL\Documents\devs\betadev\app.py:24]
+2025-11-09 22:52:03,832 INFO: Dangote Execution Tracker startup [in C:\Users\DELL\Documents\devs\betadev\app.py:24]
+2025-11-09 22:52:45,063 INFO: Dangote Execution Tracker startup [in C:\Users\DELL\Documents\devs\betadev\app.py:24]
+2025-11-09 22:55:23,396 INFO: Dangote Execution Tracker startup [in C:\Users\DELL\Documents\devs\betadev\app.py:24]
+2025-11-09 23:02:04,113 INFO: Dangote Execution Tracker startup [in C:\Users\DELL\Documents\devs\betadev\app.py:24]
+2025-11-09 23:02:52,542 INFO: Dangote Execution Tracker startup [in C:\Users\DELL\Documents\devs\betadev\app.py:24]
+2025-11-09 23:03:10,582 INFO: Dangote Execution Tracker startup [in C:\Users\DELL\Documents\devs\betadev\app.py:24]
+2025-11-09 23:03:11,906 INFO: Dangote Execution Tracker startup [in C:\Users\DELL\Documents\devs\betadev\app.py:24]
+2025-11-09 23:05:27,109 INFO: Dangote Execution Tracker startup [in C:\Users\DELL\Documents\devs\betadev\app.py:24]
+2025-11-09 23:05:28,628 INFO: Dangote Execution Tracker startup [in C:\Users\DELL\Documents\devs\betadev\app.py:24]
+2025-11-09 23:05:34,716 INFO: Outlets access - User: brobot, Role: field_agent, Region: SS, State: AKWA_IBOM [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:66]
+2025-11-09 23:05:34,718 INFO: Final query: 
+            SELECT o.* FROM outlets o
+            WHERE 1=1
+            AND o.id NOT IN (
+                SELECT DISTINCT outlet_id FROM executions
+                WHERE status = 'Completed'
+            )
+         AND UPPER(o.region) = UPPER(?) AND UPPER(o.state) = UPPER(?) LIMIT ? OFFSET ? [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:164]
+2025-11-09 23:05:34,718 INFO: Query parameters: ['SS', 'AKWA_IBOM', 20, 0] [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:165]
+2025-11-09 23:05:34,719 INFO: Query returned 0 outlets out of 0 total available [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:172]
+2025-11-09 23:05:34,720 WARNING: No outlets available for field agent brobot in region SS [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:177]
+2025-11-09 23:05:52,516 INFO: Outlets access - User: brobot, Role: field_agent, Region: SS, State: AKWA_IBOM [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:66]
+2025-11-09 23:05:52,517 INFO: Final query: 
+            SELECT o.* FROM outlets o
+            WHERE 1=1
+            AND o.id NOT IN (
+                SELECT DISTINCT outlet_id FROM executions
+                WHERE status = 'Completed'
+            )
+         AND UPPER(o.region) = UPPER(?) AND UPPER(o.state) = UPPER(?) AND UPPER(o.region) = UPPER(?) LIMIT ? OFFSET ? [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:164]
+2025-11-09 23:05:52,518 INFO: Query parameters: ['SS', 'AKWA_IBOM', 'SW', 20, 0] [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:165]
+2025-11-09 23:05:52,518 INFO: Query returned 0 outlets out of 0 total available [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:172]
+2025-11-09 23:05:52,519 WARNING: No outlets available for field agent brobot in region SS [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:177]
+2025-11-09 23:07:04,513 INFO: Outlets access - User: brobot, Role: field_agent, Region: SS, State: AKWA_IBOM [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:66]
+2025-11-09 23:07:04,514 INFO: Final query: 
+            SELECT o.* FROM outlets o
+            WHERE 1=1
+            AND o.id NOT IN (
+                SELECT DISTINCT outlet_id FROM executions
+                WHERE status = 'Completed'
+            )
+         AND UPPER(o.region) = UPPER(?) AND UPPER(o.state) = UPPER(?) LIMIT ? OFFSET ? [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:164]
+2025-11-09 23:07:04,515 INFO: Query parameters: ['SS', 'AKWA_IBOM', 20, 0] [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:165]
+2025-11-09 23:07:04,516 INFO: Query returned 0 outlets out of 0 total available [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:172]
+2025-11-09 23:07:04,517 WARNING: No outlets available for field agent brobot in region SS [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:177]
+2025-11-09 23:07:18,571 INFO: Outlets access - User: brobot, Role: field_agent, Region: SS, State: AKWA_IBOM [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:66]
+2025-11-09 23:07:18,615 INFO: Final query: 
+            SELECT o.* FROM outlets o
+            WHERE 1=1
+            AND o.id NOT IN (
+                SELECT DISTINCT outlet_id FROM executions
+                WHERE status = 'Completed'
+            )
+         AND UPPER(o.region) = UPPER(?) AND UPPER(o.state) = UPPER(?) LIMIT ? OFFSET ? [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:164]
+2025-11-09 23:07:18,623 INFO: Query parameters: ['SS', 'AKWA_IBOM', 20, 0] [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:165]
+2025-11-09 23:07:18,630 INFO: Query returned 0 outlets out of 0 total available [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:172]
+2025-11-09 23:07:18,666 WARNING: No outlets available for field agent brobot in region SS [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:177]
+2025-11-09 23:15:02,393 INFO: Dangote Execution Tracker startup [in C:\Users\DELL\Documents\devs\betadev\app.py:24]
+2025-11-09 23:15:04,180 INFO: Dangote Execution Tracker startup [in C:\Users\DELL\Documents\devs\betadev\app.py:24]
+2025-11-09 23:15:20,178 INFO: Outlets access - User: brobot, Role: field_agent, Region: SS, State: AKWA_IBOM [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:66]
+2025-11-09 23:15:20,180 INFO: Final query: 
+            SELECT o.* FROM outlets o
+            WHERE 1=1
+            AND o.id NOT IN (
+                SELECT DISTINCT outlet_id FROM executions
+                WHERE status = 'Completed'
+            )
+         AND UPPER(o.region) = UPPER(?) LIMIT ? OFFSET ? [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:158]
+2025-11-09 23:15:20,184 INFO: Query parameters: ['SS', 20, 0] [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:159]
+2025-11-09 23:15:20,186 INFO: Query returned 20 outlets out of 297 total available [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:166]
+2025-11-09 23:15:20,186 INFO: First outlet: URN=DCP/19/SS/004753, Name=Everyday Cement, Region=SS [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:168]
+2025-11-09 23:15:28,937 INFO: Outlets access - User: brobot, Role: field_agent, Region: SS, State: AKWA_IBOM [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:66]
+2025-11-09 23:15:28,938 INFO: Final query: 
+            SELECT o.* FROM outlets o
+            WHERE 1=1
+            AND o.id NOT IN (
+                SELECT DISTINCT outlet_id FROM executions
+                WHERE status = 'Completed'
+            )
+         AND UPPER(o.region) = UPPER(?) LIMIT ? OFFSET ? [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:158]
+2025-11-09 23:15:28,939 INFO: Query parameters: ['SS', 20, 20] [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:159]
+2025-11-09 23:15:28,940 INFO: Query returned 20 outlets out of 297 total available [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:166]
+2025-11-09 23:15:28,943 INFO: First outlet: URN=DCP/19/SS/004928, Name=Nsisco & Sons, Region=SS [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:168]
+2025-11-09 23:15:32,882 INFO: Outlets access - User: brobot, Role: field_agent, Region: SS, State: AKWA_IBOM [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:66]
+2025-11-09 23:15:32,883 INFO: Final query: 
+            SELECT o.* FROM outlets o
+            WHERE 1=1
+            AND o.id NOT IN (
+                SELECT DISTINCT outlet_id FROM executions
+                WHERE status = 'Completed'
+            )
+         AND UPPER(o.region) = UPPER(?) LIMIT ? OFFSET ? [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:158]
+2025-11-09 23:15:32,884 INFO: Query parameters: ['SS', 20, 40] [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:159]
+2025-11-09 23:15:32,885 INFO: Query returned 20 outlets out of 297 total available [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:166]
+2025-11-09 23:15:32,885 INFO: First outlet: URN=DCP/19/SS/005232, Name=Samfelix, Region=SS [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:168]
+2025-11-09 23:15:37,303 INFO: Outlets access - User: brobot, Role: field_agent, Region: SS, State: AKWA_IBOM [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:66]
+2025-11-09 23:15:37,304 INFO: Final query: 
+            SELECT o.* FROM outlets o
+            WHERE 1=1
+            AND o.id NOT IN (
+                SELECT DISTINCT outlet_id FROM executions
+                WHERE status = 'Completed'
+            )
+         AND UPPER(o.region) = UPPER(?) LIMIT ? OFFSET ? [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:158]
+2025-11-09 23:15:37,304 INFO: Query parameters: ['SS', 20, 60] [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:159]
+2025-11-09 23:15:37,305 INFO: Query returned 20 outlets out of 297 total available [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:166]
+2025-11-09 23:15:37,306 INFO: First outlet: URN=DCP/20/SS/007760, Name=Joshua & Sons Enterprise, Region=SS [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:168]
+2025-11-09 23:15:41,100 INFO: Outlets access - User: brobot, Role: field_agent, Region: SS, State: AKWA_IBOM [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:66]
+2025-11-09 23:15:41,101 INFO: Final query: 
+            SELECT o.* FROM outlets o
+            WHERE 1=1
+            AND o.id NOT IN (
+                SELECT DISTINCT outlet_id FROM executions
+                WHERE status = 'Completed'
+            )
+         AND UPPER(o.region) = UPPER(?) LIMIT ? OFFSET ? [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:158]
+2025-11-09 23:15:41,101 INFO: Query parameters: ['SS', 20, 100] [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:159]
+2025-11-09 23:15:41,102 INFO: Query returned 20 outlets out of 297 total available [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:166]
+2025-11-09 23:15:41,102 INFO: First outlet: URN=DCP/24/SS/14487, Name=Cy Resources, Region=SS [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:168]
+2025-11-09 23:15:46,056 INFO: Outlets access - User: brobot, Role: field_agent, Region: SS, State: AKWA_IBOM [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:66]
+2025-11-09 23:15:46,060 INFO: Final query: 
+            SELECT o.* FROM outlets o
+            WHERE 1=1
+            AND o.id NOT IN (
+                SELECT DISTINCT outlet_id FROM executions
+                WHERE status = 'Completed'
+            )
+         AND UPPER(o.region) = UPPER(?) LIMIT ? OFFSET ? [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:158]
+2025-11-09 23:15:46,061 INFO: Query parameters: ['SS', 20, 140] [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:159]
+2025-11-09 23:15:46,062 INFO: Query returned 20 outlets out of 297 total available [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:166]
+2025-11-09 23:15:46,063 INFO: First outlet: URN=DCP/19/SS/005027, Name=Triple J Creatives LTD, Region=SS [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:168]
+2025-11-09 23:15:52,266 INFO: Outlets access - User: brobot, Role: field_agent, Region: SS, State: AKWA_IBOM [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:66]
+2025-11-09 23:15:52,267 INFO: Final query: 
+            SELECT o.* FROM outlets o
+            WHERE 1=1
+            AND o.id NOT IN (
+                SELECT DISTINCT outlet_id FROM executions
+                WHERE status = 'Completed'
+            )
+         AND UPPER(o.region) = UPPER(?) LIMIT ? OFFSET ? [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:158]
+2025-11-09 23:15:52,268 INFO: Query parameters: ['SS', 20, 180] [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:159]
+2025-11-09 23:15:52,271 INFO: Query returned 20 outlets out of 297 total available [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:166]
+2025-11-09 23:15:52,273 INFO: First outlet: URN=DCP/20/SS/007685, Name=Ani-best Ventures, Region=SS [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:168]
+2025-11-09 23:15:56,472 INFO: Outlets access - User: brobot, Role: field_agent, Region: SS, State: AKWA_IBOM [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:66]
+2025-11-09 23:15:56,473 INFO: Final query: 
+            SELECT o.* FROM outlets o
+            WHERE 1=1
+            AND o.id NOT IN (
+                SELECT DISTINCT outlet_id FROM executions
+                WHERE status = 'Completed'
+            )
+         AND UPPER(o.region) = UPPER(?) LIMIT ? OFFSET ? [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:158]
+2025-11-09 23:15:56,473 INFO: Query parameters: ['SS', 20, 220] [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:159]
+2025-11-09 23:15:56,474 INFO: Query returned 20 outlets out of 297 total available [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:166]
+2025-11-09 23:15:56,474 INFO: First outlet: URN=DCP/23/SS/012516, Name=Uwekon Enterprises, Region=SS [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:168]
+2025-11-09 23:15:59,913 INFO: Outlets access - User: brobot, Role: field_agent, Region: SS, State: AKWA_IBOM [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:66]
+2025-11-09 23:15:59,916 INFO: Final query: 
+            SELECT o.* FROM outlets o
+            WHERE 1=1
+            AND o.id NOT IN (
+                SELECT DISTINCT outlet_id FROM executions
+                WHERE status = 'Completed'
+            )
+         AND UPPER(o.region) = UPPER(?) LIMIT ? OFFSET ? [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:158]
+2025-11-09 23:15:59,918 INFO: Query parameters: ['SS', 20, 260] [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:159]
+2025-11-09 23:15:59,922 INFO: Query returned 20 outlets out of 297 total available [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:166]
+2025-11-09 23:15:59,922 INFO: First outlet: URN=DCP/19/SS/004730, Name=UK- Polly Enterprise, Region=SS [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:168]
+2025-11-09 23:16:05,306 INFO: Outlets access - User: brobot, Role: field_agent, Region: SS, State: AKWA_IBOM [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:66]
+2025-11-09 23:16:05,307 INFO: Final query: 
+            SELECT o.* FROM outlets o
+            WHERE 1=1
+            AND o.id NOT IN (
+                SELECT DISTINCT outlet_id FROM executions
+                WHERE status = 'Completed'
+            )
+         AND UPPER(o.region) = UPPER(?) LIMIT ? OFFSET ? [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:158]
+2025-11-09 23:16:05,307 INFO: Query parameters: ['SS', 20, 280] [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:159]
+2025-11-09 23:16:05,308 INFO: Query returned 17 outlets out of 297 total available [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:166]
+2025-11-09 23:16:05,311 INFO: First outlet: URN=DCP/24/SS/13851, Name=Raphael Cement Store, Region=SS [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:168]
+2025-11-09 23:16:34,446 INFO: Outlets access - User: brobot, Role: field_agent, Region: SS, State: AKWA_IBOM [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:66]
+2025-11-09 23:16:34,448 INFO: Final query: 
+            SELECT o.* FROM outlets o
+            WHERE 1=1
+            AND o.id NOT IN (
+                SELECT DISTINCT outlet_id FROM executions
+                WHERE status = 'Completed'
+            )
+         AND UPPER(o.region) = UPPER(?) AND UPPER(o.outlet_type) = UPPER(?) LIMIT ? OFFSET ? [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:158]
+2025-11-09 23:16:34,449 INFO: Query parameters: ['SS', 'Shop', 20, 0] [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:159]
+2025-11-09 23:16:34,453 INFO: Query returned 20 outlets out of 276 total available [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:166]
+2025-11-09 23:16:34,453 INFO: First outlet: URN=DCP/19/SS/004753, Name=Everyday Cement, Region=SS [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:168]
+2025-11-09 23:16:41,438 INFO: Outlets access - User: brobot, Role: field_agent, Region: SS, State: AKWA_IBOM [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:66]
+2025-11-09 23:16:41,440 INFO: Final query: 
+            SELECT o.* FROM outlets o
+            WHERE 1=1
+            AND o.id NOT IN (
+                SELECT DISTINCT outlet_id FROM executions
+                WHERE status = 'Completed'
+            )
+         AND UPPER(o.region) = UPPER(?) AND UPPER(o.outlet_type) = UPPER(?) LIMIT ? OFFSET ? [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:158]
+2025-11-09 23:16:41,440 INFO: Query parameters: ['SS', 'Shop', 20, 40] [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:159]
+2025-11-09 23:16:41,441 INFO: Query returned 20 outlets out of 276 total available [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:166]
+2025-11-09 23:16:41,441 INFO: First outlet: URN=DCP/19/SS/005232, Name=Samfelix, Region=SS [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:168]
+2025-11-09 23:16:47,730 INFO: Outlets access - User: brobot, Role: field_agent, Region: SS, State: AKWA_IBOM [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:66]
+2025-11-09 23:16:47,731 INFO: Final query: 
+            SELECT o.* FROM outlets o
+            WHERE 1=1
+            AND o.id NOT IN (
+                SELECT DISTINCT outlet_id FROM executions
+                WHERE status = 'Completed'
+            )
+         AND UPPER(o.region) = UPPER(?) AND UPPER(o.outlet_type) = UPPER(?) LIMIT ? OFFSET ? [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:158]
+2025-11-09 23:16:47,732 INFO: Query parameters: ['SS', 'Shop', 20, 0] [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:159]
+2025-11-09 23:16:47,733 INFO: Query returned 20 outlets out of 276 total available [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:166]
+2025-11-09 23:16:47,733 INFO: First outlet: URN=DCP/19/SS/004753, Name=Everyday Cement, Region=SS [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:168]
+2025-11-09 23:17:24,760 INFO: Outlets access - User: brobot, Role: field_agent, Region: SS, State: AKWA_IBOM [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:66]
+2025-11-09 23:17:24,768 INFO: Final query: 
+            SELECT o.* FROM outlets o
+            WHERE 1=1
+            AND o.id NOT IN (
+                SELECT DISTINCT outlet_id FROM executions
+                WHERE status = 'Completed'
+            )
+         AND UPPER(o.region) = UPPER(?) AND UPPER(o.outlet_type) = UPPER(?) LIMIT ? OFFSET ? [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:158]
+2025-11-09 23:17:24,778 INFO: Query parameters: ['SS', 'Container', 20, 0] [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:159]
+2025-11-09 23:17:24,782 INFO: Query returned 14 outlets out of 14 total available [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:166]
+2025-11-09 23:17:24,782 INFO: First outlet: URN=DCP/22/SS/011083, Name=Ekamos & Sons2, Region=SS [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:168]
+2025-11-09 23:17:34,120 INFO: Outlets access - User: brobot, Role: field_agent, Region: SS, State: AKWA_IBOM [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:66]
+2025-11-09 23:17:34,121 INFO: Final query: 
+            SELECT o.* FROM outlets o
+            WHERE 1=1
+            AND o.id NOT IN (
+                SELECT DISTINCT outlet_id FROM executions
+                WHERE status = 'Completed'
+            )
+         AND UPPER(o.region) = UPPER(?) LIMIT ? OFFSET ? [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:158]
+2025-11-09 23:17:34,123 INFO: Query parameters: ['SS', 20, 0] [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:159]
+2025-11-09 23:17:34,123 INFO: Query returned 20 outlets out of 297 total available [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:166]
+2025-11-09 23:17:34,123 INFO: First outlet: URN=DCP/19/SS/004753, Name=Everyday Cement, Region=SS [in C:\Users\DELL\Documents\devs\betadev\pykes\routes.py:168]
+2025-11-10 14:57:13,321 INFO: Dangote Execution Tracker startup [in C:\Users\DELL\Documents\devs\betadev\app.py:24]
+2025-11-10 14:57:14,687 INFO: Dangote Execution Tracker startup [in C:\Users\DELL\Documents\devs\betadev\app.py:24]

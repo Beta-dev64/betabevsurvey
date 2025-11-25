@@ -1,0 +1,368 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard - Dangote Cement{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h3 mb-0">Dashboard</h1>
+        <div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-outline-secondary" id="filter-week">Week</button>
+                <button type="button" class="btn btn-outline-secondary active" id="filter-month">Month</button>
+                <button type="button" class="btn btn-outline-secondary" id="filter-year">Year</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Row -->
+    <div class="row mb-4">
+        <div class="col-md-3">
+            <div class="stat-card p-3 d-flex align-items-center">
+                <div class="stat-icon">
+                    <i class="fas fa-store"></i>
+                </div>
+                <div>
+                    <div class="stat-value" id="total-outlets">0</div>
+                    <div class="stat-title">Total Outlets</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stat-card p-3 d-flex align-items-center">
+                <div class="stat-icon">
+                    <i class="fas fa-clipboard-check"></i>
+                </div>
+                <div>
+                    <div class="stat-value" id="executions-total">0</div>
+                    <div class="stat-title">Total Executions</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stat-card p-3 d-flex align-items-center">
+                <div class="stat-icon">
+                    <i class="fas fa-percentage"></i>
+                </div>
+                <div>
+                    <div class="stat-value" id="coverage-percentage">0%</div>
+                    <div class="stat-title">Outlet Coverage</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stat-card p-3 d-flex align-items-center">
+                <div class="stat-icon">
+                    <i class="fas fa-user-check"></i>
+                </div>
+                <div>
+                    <div class="stat-value" id="active-agents">0</div>
+                    <div class="stat-title">Active Agents</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charts Row -->
+    <div class="row mb-4">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-white">
+                    <h5 class="card-title mb-0">Executions Over Time</h5>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <canvas id="executionsChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header bg-white">
+                    <h5 class="card-title mb-0">Outlet Types</h5>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <canvas id="outletTypesChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Charts Row -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-white">
+                    <h5 class="card-title mb-0">Outlets by Region</h5>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <canvas id="regionChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-white">
+                    <h5 class="card-title mb-0">Executions by Agent</h5>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <canvas id="agentChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Executions -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0">Recent Executions</h5>
+                    <a href="{{ url_for('executions') }}" class="btn btn-sm btn-outline-primary">View All</a>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Outlet</th>
+                                    <th>Location</th>
+                                    <th>Agent</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="recent-executions">
+                                <!-- Populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Dashboard data fetching
+    async function fetchDashboardData() {
+        try {
+            const response = await fetch('/dashboard/data');
+            const data = await response.json();
+            updateDashboardStats(data);
+            renderCharts(data);
+        } catch (error) {
+            console.error('Error fetching dashboard data:', error);
+        }
+    }
+
+    // Update stats
+    function updateDashboardStats(data) {
+        // Calculate totals from regions
+        let totalOutlets = 0;
+        for (const region in data.regions) {
+            totalOutlets += data.regions[region];
+        }
+        
+        // For demo purposes, using placeholders for some metrics
+        document.getElementById('total-outlets').textContent = totalOutlets;
+        
+        // Demo values for execution stats
+        const executionsTotal = Object.values(data.executions_by_date).reduce((sum, count) => sum + count, 0);
+        document.getElementById('executions-total').textContent = executionsTotal;
+        
+        // Calculate coverage percentage
+        const coveragePercentage = Math.round((executionsTotal / totalOutlets) * 100);
+        document.getElementById('coverage-percentage').textContent = isNaN(coveragePercentage) ? '0%' : coveragePercentage + '%';
+        
+        // Active agents count
+        const activeAgentsCount = Object.keys(data.executions_by_agent).length;
+        document.getElementById('active-agents').textContent = activeAgentsCount;
+    }
+
+    // Render charts
+    function renderCharts(data) {
+        // Chart 1: Executions over time
+        const executionsDates = Object.keys(data.executions_by_date).sort();
+        const executionsCounts = executionsDates.map(date => data.executions_by_date[date]);
+        
+        const ctx1 = document.getElementById('executionsChart').getContext('2d');
+        new Chart(ctx1, {
+            type: 'line',
+            data: {
+                labels: executionsDates,
+                datasets: [{
+                    label: 'Executions',
+                    data: executionsCounts,
+                    backgroundColor: 'rgba(255, 102, 0, 0.2)',
+                    borderColor: 'rgba(255, 102, 0, 1)',
+                    borderWidth: 2,
+                    tension: 0.3
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+        
+        // Chart 2: Outlet Types
+        const outletTypes = Object.keys(data.outlet_types);
+        const outletTypeCounts = outletTypes.map(type => data.outlet_types[type]);
+        
+        const ctx2 = document.getElementById('outletTypesChart').getContext('2d');
+        new Chart(ctx2, {
+            type: 'doughnut',
+            data: {
+                labels: outletTypes,
+                datasets: [{
+                    data: outletTypeCounts,
+                    backgroundColor: [
+                        'rgba(255, 102, 0, 0.8)',
+                        'rgba(54, 162, 235, 0.8)',
+                        'rgba(255, 206, 86, 0.8)',
+                        'rgba(75, 192, 192, 0.8)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+        
+        // Chart 3: Outlets by Region
+        const regions = Object.keys(data.regions);
+        const regionCounts = regions.map(region => data.regions[region]);
+        
+        const ctx3 = document.getElementById('regionChart').getContext('2d');
+        new Chart(ctx3, {
+            type: 'bar',
+            data: {
+                labels: regions,
+                datasets: [{
+                    label: 'Outlets',
+                    data: regionCounts,
+                    backgroundColor: 'rgba(255, 102, 0, 0.8)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+        
+        // Chart 4: Executions by Agent
+        const agents = Object.keys(data.executions_by_agent);
+        const agentCounts = agents.map(agent => data.executions_by_agent[agent]);
+        
+        const ctx4 = document.getElementById('agentChart').getContext('2d');
+        new Chart(ctx4, {
+            type: 'bar',
+            data: {
+                labels: agents,
+                datasets: [{
+                    label: 'Executions',
+                    data: agentCounts,
+                    backgroundColor: 'rgba(54, 162, 235, 0.8)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    }
+
+    // Populate recent executions table
+    async function fetchRecentExecutions() {
+        try {
+            // For this prototype, we'll use placeholder data
+            const recentExecutions = [
+                { id: 1, date: '2023-06-25', outlet: 'FAMS STEEL COMPANY', location: 'EDO, EGOR', agent: 'John Doe', status: 'Completed' },
+                { id: 2, date: '2023-06-24', outlet: 'ALEXO HOLDING ENT', location: 'EDO, EGOR', agent: 'Jane Smith', status: 'Completed' },
+                { id: 3, date: '2023-06-23', outlet: 'IFE ENT.', location: 'EDO, EGOR', agent: 'John Doe', status: 'Completed' },
+                { id: 4, date: '2023-06-22', outlet: 'OGHAS CEMENT', location: 'EDO, EGOR', agent: 'Jane Smith', status: 'Completed' },
+                { id: 5, date: '2023-06-21', outlet: 'ONOS CEMENT', location: 'EDO, OVIA NORTH EAST', agent: 'John Doe', status: 'Completed' }
+            ];
+            
+            const tbody = document.getElementById('recent-executions');
+            tbody.innerHTML = '';
+            
+            recentExecutions.forEach(execution => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${execution.date}</td>
+                    <td>${execution.outlet}</td>
+                    <td>${execution.location}</td>
+                    <td>${execution.agent}</td>
+                    <td><span class="badge bg-success">${execution.status}</span></td>
+                    <td>
+                        <a href="/execution/${execution.id}" class="btn btn-sm btn-outline-primary">View</a>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        } catch (error) {
+            console.error('Error fetching recent executions:', error);
+        }
+    }
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', function() {
+        fetchDashboardData();
+        fetchRecentExecutions();
+        
+        // Add event listeners for time filters
+        document.getElementById('filter-week').addEventListener('click', function() {
+            setActiveFilter(this);
+            // Would refetch data with week filter in a real app
+        });
+        
+        document.getElementById('filter-month').addEventListener('click', function() {
+            setActiveFilter(this);
+            // Would refetch data with month filter in a real app
+        });
+        
+        document.getElementById('filter-year').addEventListener('click', function() {
+            setActiveFilter(this);
+            // Would refetch data with year filter in a real app
+        });
+    });
+    
+    function setActiveFilter(button) {
+        document.querySelectorAll('.btn-group .btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        button.classList.add('active');
+    }
+</script>
+{% endblock %}

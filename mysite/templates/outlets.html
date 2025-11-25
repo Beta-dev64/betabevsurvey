@@ -1,0 +1,399 @@
+{% extends 'base.html' %}
+
+{% block title %}Outlets - Dangote Cement{% endblock %}
+
+{% block head_extra %}
+<style>
+    /* Mobile optimization styles */
+    @media (max-width: 767.98px) {
+        .outlet-card {
+            margin-bottom: 10px;
+            border-left: 4px solid #ff6600;
+        }
+        
+        .outlet-card .card-body {
+            padding: 0.75rem;
+        }
+        
+        .outlet-detail {
+            font-size: 0.85rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .outlet-name {
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .outlet-address {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        
+        .outlet-badge {
+            font-size: 0.7rem;
+            padding: 0.25rem 0.5rem;
+        }
+        
+        .outlet-action {
+            margin-top: 0.5rem;
+        }
+        
+        .mobile-filter-btn {
+            position: fixed;
+            bottom: 70px;
+            right: 10px;
+            z-index: 999;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.25rem;
+        }
+        
+        .filter-dialog .modal-body {
+            padding-bottom: 80px;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h1 class="h3 mb-0">Outlet Directory</h1>
+        <div>
+            <!-- Desktop filter button -->
+            <button class="btn btn-outline-secondary me-2 d-none d-md-inline-block" type="button" data-bs-toggle="collapse" data-bs-target="#filterCollapse">
+                <i class="fas fa-filter me-1"></i> Filters
+            </button>
+            
+            <!-- Mobile filter button -->
+            <button class="btn bg-primary-dangote mobile-filter-btn d-md-none" type="button" data-bs-toggle="modal" data-bs-target="#filterModal">
+                <i class="fas fa-filter text-white"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Desktop Filters -->
+    <div class="collapse mb-4 d-none d-md-block" id="filterCollapse">
+        <div class="card card-body">
+            <div class="row">
+                <div class="col-md-3 mb-2">
+                    <label for="regionFilter" class="form-label">Region</label>
+                    <select class="form-select" id="regionFilter">
+                        <option value="">All Regions</option>
+                        <option value="SW">South West</option>
+                        <option value="SE">South East</option>
+                        <option value="NC">North Central</option>
+                        <option value="NW">North West</option>
+                        <option value="NE">North East</option>
+                    </select>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <label for="stateFilter" class="form-label">State</label>
+                    <select class="form-select" id="stateFilter">
+                        <option value="">All States</option>
+                        <option value="EDO">Edo</option>
+                        <option value="LAGOS">Lagos</option>
+                        <option value="ABUJA">Abuja</option>
+                        <option value="KANO">Kano</option>
+                    </select>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <label for="localGovtFilter" class="form-label">Local Government</label>
+                    <select class="form-select" id="localGovtFilter">
+                        <option value="">All Local Governments</option>
+                        <option value="EGOR">Egor</option>
+                        <option value="OVIA NORTH EAST">Ovia North East</option>
+                    </select>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <label for="outletTypeFilter" class="form-label">Outlet Type</label>
+                    <select class="form-select" id="outletTypeFilter">
+                        <option value="">All Types</option>
+                        <option value="Shop">Shop</option>
+                        <option value="Container">Container</option>
+                        <option value="Pallet">Pallet</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-12">
+                    <button class="btn btn-primary" id="applyFilters">Apply Filters</button>
+                    <button class="btn btn-outline-secondary ms-2" id="resetFilters">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Filter Modal -->
+    <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-sm-down filter-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="filterModalLabel">Filter Outlets</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="mobileRegionFilter" class="form-label">Region</label>
+                        <select class="form-select" id="mobileRegionFilter">
+                            <option value="">All Regions</option>
+                            <option value="SW">South West</option>
+                            <option value="SE">South East</option>
+                            <option value="NC">North Central</option>
+                            <option value="NW">North West</option>
+                            <option value="NE">North East</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mobileStateFilter" class="form-label">State</label>
+                        <select class="form-select" id="mobileStateFilter">
+                            <option value="">All States</option>
+                            <option value="EDO">Edo</option>
+                            <option value="LAGOS">Lagos</option>
+                            <option value="ABUJA">Abuja</option>
+                            <option value="KANO">Kano</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mobileLocalGovtFilter" class="form-label">Local Government</label>
+                        <select class="form-select" id="mobileLocalGovtFilter">
+                            <option value="">All Local Governments</option>
+                            <option value="EGOR">Egor</option>
+                            <option value="OVIA NORTH EAST">Ovia North East</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mobileOutletTypeFilter" class="form-label">Outlet Type</label>
+                        <select class="form-select" id="mobileOutletTypeFilter">
+                            <option value="">All Types</option>
+                            <option value="Shop">Shop</option>
+                            <option value="Container">Container</option>
+                            <option value="Pallet">Pallet</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="mobileApplyFilters">Apply Filters</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Desktop Outlets List - Table View -->
+    <div class="card d-none d-md-block">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>URN</th>
+                            <th>Outlet Name</th>
+                            <th>Customer Name</th>
+                            <th>Address</th>
+                            <th>Phone</th>
+                            <th>Type</th>
+                            <th>Location</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for outlet in outlets %}
+                        <tr>
+                            <td><small>{{ outlet.urn }}</small></td>
+                            <td>{{ outlet.outlet_name }}</td>
+                            <td>{{ outlet.customer_name }}</td>
+                            <td><small>{{ outlet.address }}</small></td>
+                            <td>{{ outlet.phone }}</td>
+                            <td>
+                                {% if outlet.outlet_type == 'Shop' %}
+                                    <span class="badge bg-primary">Shop</span>
+                                {% elif outlet.outlet_type == 'CONTAINER' %}
+                                    <span class="badge bg-success">Container</span>
+                                {% else %}
+                                    <span class="badge bg-secondary">{{ outlet.outlet_type }}</span>
+                                {% endif %}
+                            </td>
+                            <td>{{ outlet.state }}, {{ outlet.local_govt }}</td>
+                            <td>
+                                <a href="{{ url_for('new_execution', outlet_id=outlet.id) }}" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-clipboard-check me-1"></i> Execute
+                                </a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Mobile Outlets List - Card View -->
+    <div class="d-md-none">
+        <div class="mb-3">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search outlets..." id="mobileSearchInput">
+                <button class="btn btn-outline-secondary" type="button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+        
+        {% for outlet in outlets %}
+        <div class="card outlet-card">
+            <div class="card-body">
+                <div class="outlet-name">{{ outlet.outlet_name }}</div>
+                <div class="outlet-address">{{ outlet.address }}</div>
+                
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        {% if outlet.outlet_type == 'Shop' %}
+                            <span class="badge bg-primary outlet-badge">Shop</span>
+                        {% elif outlet.outlet_type == 'CONTAINER' %}
+                            <span class="badge bg-success outlet-badge">Container</span>
+                        {% else %}
+                            <span class="badge bg-secondary outlet-badge">{{ outlet.outlet_type }}</span>
+                        {% endif %}
+                        <span class="badge bg-light text-dark outlet-badge">{{ outlet.state }}</span>
+                    </div>
+                    <small class="text-muted">{{ outlet.local_govt }}</small>
+                </div>
+                
+                <div class="outlet-detail"><strong>URN:</strong> <small>{{ outlet.urn }}</small></div>
+                <div class="outlet-detail"><strong>Customer:</strong> {{ outlet.customer_name }}</div>
+                <div class="outlet-detail"><strong>Phone:</strong> {{ outlet.phone }}</div>
+                
+                <div class="outlet-action">
+                    <a href="{{ url_for('new_execution', outlet_id=outlet.id) }}" class="btn btn-primary btn-sm w-100">
+                        <i class="fas fa-clipboard-check me-1"></i> Execute
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        
+        <!-- Show when no outlets match filters -->
+        {% if outlets|length == 0 %}
+        <div class="text-center p-5">
+            <i class="fas fa-store fa-3x text-muted mb-3"></i>
+            <p>No outlets found matching your criteria.</p>
+            <button class="btn btn-outline-secondary btn-sm" id="mobileResetFilters">Reset Filters</button>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Mobile detection
+        const isMobile = window.innerWidth < 768;
+        
+        // Filter functionality
+        const applyFilters = document.getElementById('applyFilters');
+        const resetFilters = document.getElementById('resetFilters');
+        const mobileApplyFilters = document.getElementById('mobileApplyFilters');
+        const mobileResetFilters = document.getElementById('mobileResetFilters');
+        
+        // Sync filter values between mobile and desktop
+        function syncFilters(fromMobile) {
+            if (fromMobile) {
+                document.getElementById('regionFilter').value = document.getElementById('mobileRegionFilter').value;
+                document.getElementById('stateFilter').value = document.getElementById('mobileStateFilter').value;
+                document.getElementById('localGovtFilter').value = document.getElementById('mobileLocalGovtFilter').value;
+                document.getElementById('outletTypeFilter').value = document.getElementById('mobileOutletTypeFilter').value;
+            } else {
+                document.getElementById('mobileRegionFilter').value = document.getElementById('regionFilter').value;
+                document.getElementById('mobileStateFilter').value = document.getElementById('stateFilter').value;
+                document.getElementById('mobileLocalGovtFilter').value = document.getElementById('localGovtFilter').value;
+                document.getElementById('mobileOutletTypeFilter').value = document.getElementById('outletTypeFilter').value;
+            }
+        }
+        
+        // Desktop filter handlers
+        applyFilters.addEventListener('click', function() {
+            // Would apply filters and reload data in a real app
+            syncFilters(false);
+            alert('Filters applied (Demo functionality)');
+            
+            // Close filter collapse on mobile
+            if (isMobile) {
+                bootstrap.Collapse.getInstance(document.getElementById('filterCollapse')).hide();
+            }
+        });
+        
+        resetFilters.addEventListener('click', function() {
+            document.getElementById('regionFilter').value = '';
+            document.getElementById('stateFilter').value = '';
+            document.getElementById('localGovtFilter').value = '';
+            document.getElementById('outletTypeFilter').value = '';
+            
+            syncFilters(false);
+            
+            // Would reset filters and reload data in a real app
+            alert('Filters reset (Demo functionality)');
+        });
+        
+        // Mobile filter handlers
+        if (mobileApplyFilters) {
+            mobileApplyFilters.addEventListener('click', function() {
+                syncFilters(true);
+                
+                // Would apply filters and reload data in a real app
+                alert('Mobile filters applied (Demo functionality)');
+                
+                // Close the modal
+                const filterModal = document.getElementById('filterModal');
+                const modal = bootstrap.Modal.getInstance(filterModal);
+                modal.hide();
+            });
+        }
+        
+        if (mobileResetFilters) {
+            mobileResetFilters.addEventListener('click', function() {
+                document.getElementById('mobileRegionFilter').value = '';
+                document.getElementById('mobileStateFilter').value = '';
+                document.getElementById('mobileLocalGovtFilter').value = '';
+                document.getElementById('mobileOutletTypeFilter').value = '';
+                
+                syncFilters(true);
+                
+                // Would reset filters and reload data in a real app
+                alert('Mobile filters reset (Demo functionality)');
+            });
+        }
+        
+        // Mobile search functionality
+        const mobileSearchInput = document.getElementById('mobileSearchInput');
+        if (mobileSearchInput) {
+            mobileSearchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                const outletCards = document.querySelectorAll('.outlet-card');
+                
+                outletCards.forEach(card => {
+                    const outletName = card.querySelector('.outlet-name').textContent.toLowerCase();
+                    const outletAddress = card.querySelector('.outlet-address').textContent.toLowerCase();
+                    const outletURN = card.querySelector('.outlet-detail:nth-child(4)').textContent.toLowerCase();
+                    
+                    if (outletName.includes(searchTerm) || 
+                        outletAddress.includes(searchTerm) || 
+                        outletURN.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        }
+    });
+</script>
+{% endblock %}

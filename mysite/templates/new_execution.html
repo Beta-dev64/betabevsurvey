@@ -1,0 +1,419 @@
+{% extends 'base.html' %}
+
+{% block title %}New Execution - Dangote Cement{% endblock %}
+
+{% block head_extra %}
+<style>
+    .camera-box {
+        width: 100%;
+        height: 300px;
+        border: 2px dashed #ccc;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        position: relative;
+        overflow: hidden;
+        background-color: #f8f9fa;
+    }
+    
+    .camera-box video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .camera-box img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+    
+    .camera-controls {
+        margin-bottom: 20px;
+        display: flex;
+        gap: 10px;
+    }
+    
+    .camera-label {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: rgba(255, 102, 0, 0.8);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    
+    .camera-status {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    
+    .confirmation-img {
+        max-height: 200px;
+        object-fit: contain;
+    }
+    
+    .btn-pulse {
+        animation: pulse 1.5s infinite;
+    }
+    
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 0 0 0 rgba(255, 102, 0, 0.7);
+        }
+        70% {
+            box-shadow: 0 0 0 10px rgba(255, 102, 0, 0);
+        }
+        100% {
+            box-shadow: 0 0 0 0 rgba(255, 102, 0, 0);
+        }
+    }
+    
+    /* Mobile optimizations */
+    @media (max-width: 767.98px) {
+        .camera-box {
+            height: 220px;
+        }
+        
+        .confirmation-img {
+            max-height: 150px;
+        }
+        
+        .submit-container {
+            position: fixed;
+            bottom: 70px;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: rgba(255,255,255,0.95);
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            z-index: 999;
+        }
+        
+        .execution-form-mobile-container {
+            padding-bottom: 130px;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Toast container for notifications -->
+<div class="toast-container position-fixed top-0 end-0 p-3" id="toastContainer"></div>
+
+<div class="container-fluid {% if request.user_agent.platform == 'iphone' or request.user_agent.platform == 'android' %}execution-form-mobile-container{% endif %}">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h1 class="h3 mb-0">
+            <span class="d-none d-md-inline">New Execution:</span> 
+            {{ outlet.outlet_name }}
+        </h1>
+        <div>
+            <a href="{{ url_for('outlets') }}" class="btn btn-outline-secondary btn-sm">
+                <i class="fas fa-arrow-left me-1"></i> <span class="d-none d-md-inline">Back</span>
+            </a>
+        </div>
+    </div>
+
+    <form method="post" enctype="multipart/form-data" id="executionForm">
+        <!-- Outlet Information -->
+        <div class="card mb-3">
+            <div class="card-header bg-white py-2">
+                <h5 class="card-title mb-0">Outlet Information</h5>
+            </div>
+            <div class="card-body p-2">
+                <div class="accordion" id="outletAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#outletDetails">
+                                Tap to view outlet details
+                            </button>
+                        </h2>
+                        <div id="outletDetails" class="accordion-collapse collapse">
+                            <div class="accordion-body p-2">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <table class="table table-sm outlet-info-table mb-0">
+                                            <tr>
+                                                <th>URN:</th>
+                                                <td><small>{{ outlet.urn }}</small></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Customer:</th>
+                                                <td>{{ outlet.customer_name }}</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Phone:</th>
+                                                <td>{{ outlet.phone }}</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <table class="table table-sm outlet-info-table mb-0">
+                                            <tr>
+                                                <th>Address:</th>
+                                                <td><small>{{ outlet.address }}</small></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Location:</th>
+                                                <td>{{ outlet.state }}, {{ outlet.local_govt }}</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Type:</th>
+                                                <td>{{ outlet.outlet_type }}</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Capture -->
+        <div class="card mb-3">
+            <div class="card-header bg-white py-2">
+                <h5 class="card-title mb-0">Image Capture</h5>
+            </div>
+            <div class="card-body p-3">
+                <!-- Before Image -->
+                <div class="mb-3">
+                    <div class="mb-2 d-flex justify-content-between align-items-center">
+                        <strong>Before Image</strong>
+                        <span class="badge bg-secondary" id="beforeStatus">Not Captured</span>
+                    </div>
+                    <div class="camera-box" id="beforeCameraBox">
+                        <div class="camera-label">BEFORE</div>
+                        <div class="text-center" id="beforePlaceholder">
+                            <i class="fas fa-camera fa-3x mb-3 text-muted"></i>
+                            <p class="small">Tap button below to capture image</p>
+                        </div>
+                        <video id="beforeVideo" autoplay playsinline style="display: none;"></video>
+                        <img id="beforePreview" style="display: none;" />
+                    </div>
+                    
+                    <div class="camera-controls">
+                        <button type="button" class="btn btn-primary" id="beforeCaptureBtn">
+                            <i class="fas fa-camera me-1"></i> <span class="d-none d-md-inline">Capture</span>
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" id="beforeUploadBtn">
+                            <i class="fas fa-upload me-1"></i> <span class="d-none d-md-inline">Upload</span>
+                        </button>
+                        <button type="button" class="btn btn-outline-danger" id="beforeResetBtn" style="display: none;">
+                            <i class="fas fa-times me-1"></i> <span class="d-none d-md-inline">Reset</span>
+                        </button>
+                    </div>
+                    <input type="file" id="beforeFileInput" name="before_image" style="display: none;" accept="image/*" capture="environment">
+                    <input type="hidden" id="beforeCapturedImage" name="before_captured_image">
+                </div>
+                
+                <!-- After Image -->
+                <div class="mb-3">
+                    <div class="mb-2 d-flex justify-content-between align-items-center">
+                        <strong>After Image</strong>
+                        <span class="badge bg-secondary" id="afterStatus">Not Captured</span>
+                    </div>
+                    <div class="camera-box" id="afterCameraBox">
+                        <div class="camera-label">AFTER</div>
+                        <div class="text-center" id="afterPlaceholder">
+                            <i class="fas fa-camera fa-3x mb-3 text-muted"></i>
+                            <p class="small">Tap button below to capture image</p>
+                        </div>
+                        <video id="afterVideo" autoplay playsinline style="display: none;"></video>
+                        <img id="afterPreview" style="display: none;" />
+                    </div>
+                    
+                    <div class="camera-controls">
+                        <button type="button" class="btn btn-primary" id="afterCaptureBtn">
+                            <i class="fas fa-camera me-1"></i> <span class="d-none d-md-inline">Capture</span>
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" id="afterUploadBtn">
+                            <i class="fas fa-upload me-1"></i> <span class="d-none d-md-inline">Upload</span>
+                        </button>
+                        <button type="button" class="btn btn-outline-danger" id="afterResetBtn" style="display: none;">
+                            <i class="fas fa-times me-1"></i> <span class="d-none d-md-inline">Reset</span>
+                        </button>
+                    </div>
+                    <input type="file" id="afterFileInput" name="after_image" style="display: none;" accept="image/*" capture="environment">
+                    <input type="hidden" id="afterCapturedImage" name="after_captured_image">
+                </div>
+            </div>
+        </div>
+
+        <!-- Geolocation -->
+        <div class="card mb-3">
+            <div class="card-header bg-white py-2">
+                <h5 class="card-title mb-0">Geolocation</h5>
+            </div>
+            <div class="card-body p-3">
+                <div class="geolocation-box" id="geolocationStatus">
+                    <div class="d-flex align-items-center">
+                        <div class="spinner-border text-primary me-3" role="status" style="width: 1.5rem; height: 1.5rem;">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <div>
+                            <strong>Detecting location...</strong>
+                            <p class="mb-0 small text-muted">Please allow location access</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <input type="hidden" id="latitude" name="latitude">
+                <input type="hidden" id="longitude" name="longitude">
+            </div>
+        </div>
+
+        <!-- Product Availability -->
+        <div class="card mb-3">
+            <div class="card-header bg-white py-2">
+                <h5 class="card-title mb-0">Product Availability</h5>
+            </div>
+            <div class="card-body p-3">
+                <div class="row g-2">
+                    {% for product in products %}
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body py-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Yes" id="product_{{ product|replace(' ', '_') }}" name="product_{{ product|replace(' ', '_') }}">
+                                    <label class="form-check-label" for="product_{{ product|replace(' ', '_') }}">
+                                        {{ product }}
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Notes -->
+        <div class="card mb-3">
+            <div class="card-header bg-white py-2">
+                <h5 class="card-title mb-0">Notes</h5>
+            </div>
+            <div class="card-body p-3">
+                <div class="form-group">
+                    <textarea class="form-control" id="notes" name="notes" rows="3" placeholder="Add notes or observations"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit Button - Regular version for desktop -->
+        <div class="card mb-4 d-none d-md-block">
+            <div class="card-body">
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-secondary btn-lg" id="submitBtn" disabled>
+                        <i class="fas fa-save me-1"></i> Submit Execution
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fixed Submit Button for Mobile -->
+        <div class="submit-container d-md-none">
+            <div class="d-grid">
+                <button type="submit" class="btn btn-secondary btn-lg" id="mobileSubmitBtn" disabled>
+                    <i class="fas fa-save me-1"></i> Submit Execution
+                </button>
+            </div>
+        </div>
+    </form>
+    
+    <!-- Confirmation Modal -->
+    <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmModalLabel">Confirm Execution</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Please confirm the images to be submitted:</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6 text-center mb-3">
+                            <h6>Before Image</h6>
+                            <img id="confirmBeforeImage" class="img-fluid confirmation-img border rounded mb-2" alt="Before Image">
+                        </div>
+                        <div class="col-md-6 text-center mb-3">
+                            <h6>After Image</h6>
+                            <img id="confirmAfterImage" class="img-fluid confirmation-img border rounded mb-2" alt="After Image">
+                        </div>
+                    </div>
+                    
+                    <div class="alert alert-warning">
+                        <i class="fas fa-exclamation-triangle me-2"></i> Please verify that the images clearly show the outlet before and after execution.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Edit Images</button>
+                    <button type="button" class="btn btn-primary" id="confirmSubmitBtn">Confirm & Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Camera Sound -->
+    <audio id="cameraSound" src="https://www.soundjay.com/mechanical/sounds/camera-shutter-click-01.mp3" preload="auto"></audio>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/camera.js') }}"></script>
+<script>
+    // Initialize geolocation
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get geolocation
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                function(position) {
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+                    
+                    document.getElementById('latitude').value = latitude;
+                    document.getElementById('longitude').value = longitude;
+                    
+                    document.getElementById('geolocationStatus').innerHTML = `
+                        <div class="d-flex align-items-center">
+                            <div class="bg-success text-white rounded-circle me-3" style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center;">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <strong>Location detected</strong>
+                                <p class="mb-0 small">Lat: ${latitude.toFixed(6)}, Long: ${longitude.toFixed(6)}</p>
+                            </div>
+                        </div>
+                    `;
+                },
+                function(error) {
+                    console.error('Geolocation error:', error);
+                    document.getElementById('geolocationStatus').innerHTML = `
+                        <div class="alert alert-danger mb-0 p-2">
+                            <i class="fas fa-exclamation-triangle me-2"></i>
+                            <strong>Location detection failed</strong>
+                            <p class="mb-0 small">Please enable location services</p>
+                        </div>
+                    `;
+                },
+                { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+            );
+        } else {
+            document.getElementById('geolocationStatus').innerHTML = `
+                <div class="alert alert-danger mb-0 p-2">
+                    <i class="fas fa-exclamation-triangle me-2"></i>
+                    <strong>Geolocation not supported</strong>
+                    <p class="mb-0 small">Your browser doesn't support location</p>
+                </div>
+            `;
+        }
+    });
+</script>
+{% endblock %}

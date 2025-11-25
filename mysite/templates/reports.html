@@ -1,0 +1,375 @@
+{% extends 'base.html' %}
+
+{% block title %}Reports - Dangote Cement{% endblock %}
+
+{% block head_extra %}
+<style>
+    .report-card {
+        transition: transform 0.3s;
+        border-left: 4px solid #ff6600;
+        cursor: pointer;
+    }
+    
+    .report-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .report-section {
+        display: none;
+    }
+    
+    .active-report {
+        display: block;
+    }
+    
+    .chart-container {
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    
+    .report-nav-item {
+        cursor: pointer;
+        padding: 10px 15px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        transition: all 0.2s;
+    }
+    
+    .report-nav-item:hover {
+        background-color: #f8f9fa;
+    }
+    
+    .report-nav-item.active {
+        background-color: #ff6600;
+        color: white;
+    }
+    
+    .report-nav-item i {
+        width: 20px;
+        text-align: center;
+        margin-right: 8px;
+    }
+    
+    .compliance-score {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    
+    .comparison-image {
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+    
+    .comparison-image:hover {
+        transform: scale(1.05);
+    }
+    
+    .image-label {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: rgba(255, 102, 0, 0.8);
+        color: white;
+        padding: 3px 8px;
+        border-radius: 3px;
+        font-size: 0.8rem;
+    }
+    
+    /* Mobile optimizations */
+    @media (max-width: 767.98px) {
+        .chart-container {
+            height: 250px;
+        }
+        
+        .compliance-score {
+            font-size: 2rem;
+        }
+        
+        .report-nav-item {
+            padding: 8px 10px;
+            margin-bottom: 3px;
+        }
+        
+        .comparison-image {
+            max-height: 150px;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h1 class="h3 mb-0">Reports & Analytics</h1>
+        <div>
+            <button class="btn btn-outline-secondary" id="exportReportBtn">
+                <i class="fas fa-file-export me-1"></i> Export
+            </button>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Report Navigation Sidebar -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-header bg-white">
+                    <h5 class="card-title mb-0">Reports</h5>
+                </div>
+                <div class="card-body p-2">
+                    <div class="list-group list-group-flush">
+                        <div class="report-nav-item active" data-report="productAvailabilityReportSection">
+                            <i class="fas fa-boxes"></i> Product Availability
+                        </div>
+                        <div class="report-nav-item" data-report="executionSummaryReportSection">
+                            <i class="fas fa-chart-pie"></i> Execution Summary
+                        </div>
+                        <div class="report-nav-item" data-report="imageAnalysisReportSection">
+                            <i class="fas fa-images"></i> Image Analysis
+                        </div>
+                        <div class="report-nav-item" data-report="agentPerformanceReportSection">
+                            <i class="fas fa-user-check"></i> Agent Performance
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mt-3 d-none d-md-block">
+                <div class="card-header bg-white">
+                    <h5 class="card-title mb-0">Filters</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label">Date Range</label>
+                        <select class="form-select" id="dateRangeFilter">
+                            <option value="week">This Week</option>
+                            <option value="month" selected>This Month</option>
+                            <option value="quarter">This Quarter</option>
+                            <option value="year">This Year</option>
+                            <option value="custom">Custom Range</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Region</label>
+                        <select class="form-select" id="regionFilter">
+                            <option value="all" selected>All Regions</option>
+                            <option value="SW">South West</option>
+                            <option value="SE">South East</option>
+                            <option value="NC">North Central</option>
+                            <option value="NW">North West</option>
+                            <option value="NE">North East</option>
+                        </select>
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn btn-primary" id="applyFiltersBtn">
+                            Apply Filters
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Report Content Area -->
+        <div class="col-md-9">
+            <!-- Product Availability Report -->
+            <div class="report-section active-report" id="productAvailabilityReportSection">
+                <div class="card mb-4">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title mb-0">Product Availability Report</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="productAvailabilityReport">
+                            <!-- Report content will be loaded dynamically by JavaScript -->
+                            <div class="d-flex justify-content-center align-items-center" style="height: 300px">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <span class="ms-2">Loading report data...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card mb-4">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title mb-0">Key Insights</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-info">
+                            <i class="fas fa-lightbulb me-2"></i>
+                            <strong>Product Availability Insights:</strong>
+                            <ul class="mb-0 mt-2">
+                                <li>Dangote 3X Cement has the highest availability rate across all regions</li>
+                                <li>South West region shows the strongest overall product availability</li>
+                                <li>Consider inventory management improvements in North East region</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Execution Summary Report -->
+            <div class="report-section" id="executionSummaryReportSection">
+                <div class="card mb-4">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title mb-0">Execution Summary Report</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="executionSummaryReport">
+                            <!-- Report content will be loaded dynamically by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card mb-4">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title mb-0">Key Insights</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-info">
+                            <i class="fas fa-lightbulb me-2"></i>
+                            <strong>Execution Summary Insights:</strong>
+                            <ul class="mb-0 mt-2">
+                                <li>Average number of executions per outlet: 1.3</li>
+                                <li>South West region has the highest execution coverage rate</li>
+                                <li>North East region requires additional attention to improve coverage</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Image Analysis Report -->
+            <div class="report-section" id="imageAnalysisReportSection">
+                <div class="card mb-4">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title mb-0">Image Analysis Report</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="imageAnalysisReport">
+                            <!-- Report content will be loaded dynamically by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card mb-4">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title mb-0">Key Insights</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-info">
+                            <i class="fas fa-lightbulb me-2"></i>
+                            <strong>Image Analysis Insights:</strong>
+                            <ul class="mb-0 mt-2">
+                                <li>Overall cleanliness shows the highest compliance score</li>
+                                <li>Stock organization needs improvement across all regions</li>
+                                <li>South West and North West regions show the best branding visibility</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Agent Performance Report -->
+            <div class="report-section" id="agentPerformanceReportSection">
+                <div class="card mb-4">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title mb-0">Agent Performance Report</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <i class="fas fa-user-cog fa-5x text-muted mb-3"></i>
+                        <h5>Agent Performance Report</h5>
+                        <p class="text-muted">This report will be available in the next update.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<!-- Chart helpers and utilities -->
+<script src="{{ url_for('static', filename='js/chart-helpers.js') }}"></script>
+<script src="{{ url_for('static', filename='js/report-utils.js') }}"></script>
+
+<!-- Report-specific modules -->
+<script src="{{ url_for('static', filename='js/product-report.js') }}"></script>
+<script src="{{ url_for('static', filename='js/execution-report.js') }}"></script>
+<script src="{{ url_for('static', filename='js/image-report.js') }}"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Load initial reports with a slight delay to ensure DOM is ready
+        setTimeout(function() {
+            loadProductAvailabilityReport();
+        }, 500);
+        
+        // Report navigation
+        document.querySelectorAll('.report-nav-item').forEach(item => {
+            item.addEventListener('click', function() {
+                // Update active nav item
+                document.querySelectorAll('.report-nav-item').forEach(nav => {
+                    nav.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                // Show selected report section
+                const reportId = this.getAttribute('data-report');
+                document.querySelectorAll('.report-section').forEach(section => {
+                    section.classList.remove('active-report');
+                });
+                document.getElementById(reportId).classList.add('active-report');
+                
+                // Load report data if needed
+                if (reportId === 'executionSummaryReportSection') {
+                    loadExecutionSummaryReport();
+                } else if (reportId === 'imageAnalysisReportSection') {
+                    loadImageAnalysisReport();
+                } else if (reportId === 'productAvailabilityReportSection') {
+                    loadProductAvailabilityReport();
+                }
+            });
+        });
+        
+        // Filter application
+        document.getElementById('applyFiltersBtn').addEventListener('click', function() {
+            const dateRange = document.getElementById('dateRangeFilter').value;
+            const region = document.getElementById('regionFilter').value;
+            
+            // Reload current report with filters
+            const activeReport = document.querySelector('.report-section.active-report').id;
+            
+            if (activeReport === 'productAvailabilityReportSection') {
+                loadProductAvailabilityReport();
+            } else if (activeReport === 'executionSummaryReportSection') {
+                loadExecutionSummaryReport();
+            } else if (activeReport === 'imageAnalysisReportSection') {
+                loadImageAnalysisReport();
+            }
+            
+            // Show notification
+            alert(`Filters applied: ${dateRange}, ${region === 'all' ? 'All Regions' : region}`);
+        });
+        
+        // Export report button
+        document.getElementById('exportReportBtn').addEventListener('click', function() {
+            const activeReport = document.querySelector('.report-section.active-report').id;
+            let reportName = 'Dangote Cement Report';
+            
+            if (activeReport === 'productAvailabilityReportSection') {
+                reportName = 'Product Availability Report';
+            } else if (activeReport === 'executionSummaryReportSection') {
+                reportName = 'Execution Summary Report';
+            } else if (activeReport === 'imageAnalysisReportSection') {
+                reportName = 'Image Analysis Report';
+            }
+            
+            alert(`Exporting ${reportName} (Demo functionality)`);
+        });
+    });
+</script>
+{% endblock %}
