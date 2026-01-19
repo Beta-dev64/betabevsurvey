@@ -7,5 +7,9 @@ services:
     restart: always
     ports:
       - "5000:5000"
+    volumes:
+      - ./dangote_execution.db:/app/dangote_execution.db
+      - ./static/uploads:/app/static/uploads
+      - ./logs:/app/logs
     environment:
       - FLASK_ENV=production
