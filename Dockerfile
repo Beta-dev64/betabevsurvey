@@ -29,10 +29,12 @@ RUN pip install --no-cache-dir -r requirements.txt && \
 # Copy the rest of the application code
 COPY . .
 
-# Create necessary directories for runtime data
+# Create necessary directories for runtime data and ensure DB permissions
 # Ensure appuser owns the application directory and the data directories
 RUN mkdir -p logs static/uploads && \
-    chown -R appuser:appuser /app
+    touch dangote_execution.db && \
+    chown -R appuser:appuser /app && \
+    chmod 666 dangote_execution.db
 
 # Switch to the non-root user
 USER appuser

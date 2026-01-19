@@ -12,16 +12,25 @@ app.config.from_object(Config)
 
 # Configure logging
 if not os.path.exists('logs'):
-    os.mkdir('logs')
+    try:
+        os.makedirs('logs', exist_ok=True)
+    except Exception as e:
+        print(f"Warning: Could not create logs directory: {e}")
 
-file_handler = RotatingFileHandler('logs/dangote_app.log', maxBytes=10240000, backupCount=5)
-file_handler.setFormatter(logging.Formatter(
-    '%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]'
-))
-file_handler.setLevel(logging.INFO)
-app.logger.addHandler(file_handler)
-app.logger.setLevel(logging.INFO)
-app.logger.info('Dangote Execution Tracker startup')
+try:
+    file_handler = RotatingFileHandler('logs/dangote_app.log', maxBytes=10240000, backupCount=5)
+    file_handler.setFormatter(logging.Formatter(
+        '%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]'
+    ))
+    file_handler.setLevel(logging.INFO)
+    app.logger.addHandler(file_handler)
+    app.logger.setLevel(logging.INFO)
+    app.logger.info('Dangote Execution Tracker startup')
+except Exception as e:
+    print(f"Warning: Could not set up file logging: {e}")
+    # Fallback to basic logging which goes to stdout/stderr
+    logging.basicConfig(level=logging.INFO)
+    app.logger.info('Dangote Execution Tracker startup (fallback logging)')
 
 # Initialize database
 init_db()

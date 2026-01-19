@@ -99,7 +99,10 @@ def init_db():
 
     # Ensure upload directory exists
     if not os.path.exists(UPLOAD_FOLDER):
-        os.makedirs(UPLOAD_FOLDER)
+        try:
+            os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+        except Exception as e:
+            print(f"Warning: Could not create upload directory {UPLOAD_FOLDER}: {e}")
 
 def get_db_connection():
     conn = sqlite3.connect(DB_PATH)
