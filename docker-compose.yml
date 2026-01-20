@@ -8,8 +8,11 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      
+      - /home/ibrahim/dangote_execution.db:/app/dangote_execution.db
       - ./static/uploads:/app/static/uploads
       
     environment:
       - FLASK_ENV=production
+
+
+      
