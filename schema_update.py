@@ -1,7 +1,8 @@
 import sqlite3
+import os
 
-# Connect to the database
-conn = sqlite3.connect('dangote_execution.db')
+db_path = os.environ.get('DATABASE_PATH', 'dangote_execution.db')
+conn = sqlite3.connect(db_path)
 c = conn.cursor()
 
 # Check if state and lga columns already exist

@@ -2,12 +2,14 @@ from flask import Blueprint, jsonify, request
 import sqlite3
 import json
 import random
+import os
 
 reports_bp = Blueprint('reports', __name__)
 
 # Database helper function
 def get_db_connection():
-    conn = sqlite3.connect('dangote_execution.db')
+    db_path = os.environ.get('DATABASE_PATH', 'dangote_execution.db')
+    conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row
     return conn
 

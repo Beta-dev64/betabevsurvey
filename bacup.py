@@ -19,7 +19,7 @@ app.register_blueprint(reports_bp)
 app.register_blueprint(admin_bp)
 
 # Database setup
-DB_PATH = 'dangote_execution.db'
+DB_PATH = os.environ.get('DATABASE_PATH', 'dangote_execution.db')
 
 def init_db():
     conn = sqlite3.connect(DB_PATH)

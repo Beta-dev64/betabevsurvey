@@ -3,7 +3,7 @@ import sqlite3
 from datetime import datetime
 import os
 
-DB_PATH = 'dangote_execution.db'
+DB_PATH = os.environ.get('DATABASE_PATH', 'dangote_execution.db')
 UPLOAD_FOLDER = 'static/uploads'
 
 def init_db():

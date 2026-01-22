@@ -31,10 +31,11 @@ COPY . .
 
 # Create necessary directories for runtime data and ensure DB permissions
 # Ensure appuser owns the application directory and the data directories
-RUN mkdir -p logs static/uploads && \
-    touch dangote_execution.db && \
-    chown -R appuser:appuser /app && \
-    chmod 666 dangote_execution.db
+RUN mkdir -p logs static/uploads data && \
+    chown -R appuser:appuser /app
+
+# Set default database path
+ENV DATABASE_PATH=/app/data/dangote_execution.db
 
 # Switch to the non-root user
 USER appuser

@@ -12,7 +12,8 @@ admin_bp = Blueprint('admin', __name__, url_prefix='/admin')
 
 # Helper functions
 def get_db_connection():
-    conn = sqlite3.connect('dangote_execution.db')
+    db_path = os.environ.get('DATABASE_PATH', 'dangote_execution.db')
+    conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row
     return conn
 
