@@ -6,23 +6,8 @@ let afterImageCaptured = false;
 
 // Initialize camera functionality
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Camera.js: DOMContentLoaded event fired');
-    
-    // Check if buttons exist
-    const beforeCaptureBtn = document.getElementById('beforeCaptureBtn');
-    const beforeUploadBtn = document.getElementById('beforeUploadBtn');
-    
-    if (!beforeCaptureBtn) {
-        console.error('Camera.js ERROR: beforeCaptureBtn not found in DOM');
-        console.log('Available buttons:', document.querySelectorAll('button[type="button"]'));
-        return;
-    }
-    
-    console.log('Camera.js: All required elements found, attaching event listeners');
-    
     // Before image capture
-    beforeCaptureBtn.addEventListener('click', function() {
-        console.log('Before capture button clicked');
+    document.getElementById('beforeCaptureBtn').addEventListener('click', function() {
         if (document.getElementById('beforeVideo').style.display === 'none') {
             startCamera('before');
         } else {
@@ -30,24 +15,20 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    beforeUploadBtn.addEventListener('click', function() {
-        console.log('Before upload button clicked');
+    document.getElementById('beforeUploadBtn').addEventListener('click', function() {
         document.getElementById('beforeFileInput').click();
     });
     
     document.getElementById('beforeFileInput').addEventListener('change', function(e) {
-        console.log('Before file selected');
         handleFileUpload(e, 'before');
     });
     
     document.getElementById('beforeResetBtn').addEventListener('click', function() {
-        console.log('Before reset button clicked');
         resetCamera('before');
     });
     
     // After image capture
     document.getElementById('afterCaptureBtn').addEventListener('click', function() {
-        console.log('After capture button clicked');
         if (document.getElementById('afterVideo').style.display === 'none') {
             startCamera('after');
         } else {
@@ -56,17 +37,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     document.getElementById('afterUploadBtn').addEventListener('click', function() {
-        console.log('After upload button clicked');
         document.getElementById('afterFileInput').click();
     });
     
     document.getElementById('afterFileInput').addEventListener('change', function(e) {
-        console.log('After file selected');
         handleFileUpload(e, 'after');
     });
     
     document.getElementById('afterResetBtn').addEventListener('click', function() {
-        console.log('After reset button clicked');
         resetCamera('after');
     });
     
